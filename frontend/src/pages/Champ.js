@@ -1,33 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Card from './Card';
+import { Component } from 'react';
 
 
 const Champ = () => {
-	const [data, setData] = useState([]);
-	//<p>{data ? data.Aatrox.name : "" }</p>
-
-
-	useEffect(() => {
-		axios.get('http://ddragon.leagueoflegends.com/cdn/11.14.1/data/fr_FR/champion.json')
-			.then((res) => {
-				setData(res.data.data)
-
-			});
-	}, []);
-
-
-
-
-
 	return (
-		<div className="champ">
-
-
-
+		<div>
 
 		</div>
-
 	);
 };
 
