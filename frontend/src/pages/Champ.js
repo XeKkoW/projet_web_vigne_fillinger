@@ -1,21 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Card from './Card';
+import FreeChamp from './FreeChamp';
 import champions from 'lol-champions'
 
 
 
 
 const Champ = () => {
-	const [data, setData] = useState([]);
+	const [dataFreeChamp, setDataFree] = useState([]);
 
-	//<p>{data ? data.Aatrox.name : "" }</p>
 
 
 	useEffect(() => {
-		axios.get('http://ddragon.leagueoflegends.com/cdn/11.14.1/data/fr_FR/champion.json')
+		axios.get("https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-5f4d6682-73b1-406f-80ba-1b506eabbeaf")
 			.then((res) => {
-				setData(res.data.data)
+				setDataFree(res.data.freeChampionIds)
 
 			});
 	}, []);
@@ -23,14 +22,16 @@ const Champ = () => {
 
 
 
-
 	return (
 		<div className="champ">
-			<ul>
-				{data.map((champion) => (
-					<li>
-						{champion.name}
-					</li>
+
+
+
+
+			<ul className="champ-list">
+
+				{dataFreeChamp.map((champion) => (
+					<FreeChamp champion={champion} />
 				))}
 
 			</ul>
@@ -42,6 +43,13 @@ const Champ = () => {
 export default Champ;
 
 /*<ul>
+				{dataFreeChamp.map((champion) => (
+					<li>
+						<FreeChamp champion={champion} />
+					</li>
+				))}
+
+
 				{data.map((champion) => (
 					<li>
 						{console.log(data)};
