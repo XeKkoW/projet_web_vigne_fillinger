@@ -8,22 +8,19 @@ import champions from 'lol-champions'
 
 const Champ = () => {
 	const [data, setData] = useState([]);
-	useEffect(() => {
-		setData(champions)
-	}, []);
 
-	/*	//<p>{data ? data.Aatrox.name : "" }</p>
+	//<p>{data ? data.Aatrox.name : "" }</p>
+
+
+	useEffect(() => {
+		axios.get('http://ddragon.leagueoflegends.com/cdn/11.14.1/data/fr_FR/champion.json')
+			.then((res) => {
+				setData(res.data.data)
+
+			});
+	}, []);
 	
-	
-useEffect(() => {
-	/*axios.get('http://ddragon.leagueoflegends.com/cdn/11.14.1/data/fr_FR/champion.json')
-		.then((res) => {
-			setData(res.data.data)
-	
-});
-}, []);
-	
-*/
+* /
 
 
 
