@@ -12,7 +12,7 @@ const Champ = () => {
 
 
 	useEffect(() => {
-		axios.get("https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-5f4d6682-73b1-406f-80ba-1b506eabbeaf")
+		axios.get("https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-9549364e-7295-42cd-892f-e71e28146f96")
 			.then((res) => {
 				setDataFree(res.data.freeChampionIds)
 
@@ -25,7 +25,7 @@ const Champ = () => {
 	return (
 		<div className="champ">
 
-
+			{console.log(dataFreeChamp)}
 
 
 			<ul className="champ-list">

@@ -1,7 +1,7 @@
 import React from 'react';
 import champions from 'lol-champions'
 
-const Card = (props) => {
+const FreeChamp = (props) => {
 	const champion = props.champion
 	//console.log(champion);
 	var name = "";
@@ -56,5 +56,5 @@ const Card = (props) => {
 	);
 };
 
-export default Card;
+export default FreeChamp;
 //<img src={image} alt={name} />
