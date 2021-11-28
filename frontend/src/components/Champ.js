@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import FreeChamp from './FreeChamp';
 import champions from 'lol-champions'
+import Summoner from './Summoner';
 
 
 
@@ -26,6 +27,7 @@ const Champ = () => {
 		<div className="champ">
 
 			{console.log(dataFreeChamp)}
+			<Summoner />
 
 
 			<ul className="champ-list">
