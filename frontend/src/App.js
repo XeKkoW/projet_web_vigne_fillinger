@@ -1,3 +1,4 @@
+import React from 'react';
 import Home from './pages/Homes';
 import './App.css';
 import { BrowserRouter, Switch, Route } from "react-router-dom"
