@@ -3,23 +3,25 @@ import champions from 'lol-champions'
 
 const FreeChamp = (props) => {
 	const champion = props.champion
-	//console.log(champion);
+	console.log(champion);
 	var name = "";
 	var image = "";
+
+
 
 	const goodId = (props) => {
 		const id = props
 		//	console.log(id);
 
 		champions.forEach((el) => {
-			if (el.key == id) {
+			if (el.key === id) {
 				name = el.name
 
 			}
 		})
 	}
 	const ifName = () => {
-		if (name == "") {
+		if (name === "") {
 			name = "erreur 321, le champion n'est pas dans la base de donée"
 		}
 	}
@@ -28,9 +30,11 @@ const FreeChamp = (props) => {
 		const id = props
 
 		champions.forEach((el) => {
-			if (el.key == id) {
+			if (el.key === id) {
 				image = el.icon
-				//console.log(image);
+				test = true
+				console.log("aaaaaaaaaa");
+
 
 
 			}
@@ -41,19 +45,28 @@ const FreeChamp = (props) => {
 
 
 
+
+
+
 	return (
-		<div>
+		< div >
+
 			<li>
-				{images(champion)}
-				{goodId(champion)}
-				{ifName}
+
+
 				<img src={image} alt={name} />
 
 
 
 			</li>
-		</div>
+
+		</div >
 	);
+
+
+
+
+
 };
 
 export default FreeChamp;

@@ -1,44 +1,71 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import FreeChamp from './FreeChamp';
-import Summoner from './Summoner';
-import Name from './Name';
 
 
 
 
-const Champ = () => {
+const Champ = (props) => {
+	const level = props.level;
+	//console.log(level);
 	const [dataFreeChamp, setDataFree] = useState([]);
 
-
-
 	useEffect(() => {
-		axios.get("https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-b8fff504-d797-40ca-80be-4205b49a5d1e")
-			.then((res) => {
-				setDataFree(res.data.freeChampionIds)
-
-			});
-	}, []);
 
 
 
+		if (level > 10) {
+			axios.get("https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-b8fff504-d797-40ca-80be-4205b49a5d1e")
+				.then((res) => {
+					setDataFree(res.data.freeChampionIds)
 
-	return (
-		<div className="champ">
+				});
+		}
+		else if (level <= 10 && level > 0) {
+			axios.get("https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-b8fff504-d797-40ca-80be-4205b49a5d1e")
+				.then((res) => {
+					setDataFree(res.data.freeChampionIdsForNewPlayers)
 
-			{console.log(dataFreeChamp)}
-			<Name />
+				});
+		}
 
-			<ul className="champ-list">
 
-				{dataFreeChamp.map((champion) => (
-					<FreeChamp champion={champion} />
-				))}
+	}, [level]);
 
-			</ul>
-		</div>
 
-	);
+
+
+
+
+
+
+	if (level > 0) {
+
+		return (
+			<div className="champ">
+
+
+
+
+				<ul className="champ-list">
+					{dataFreeChamp.map((champion) => (
+						<FreeChamp champion={champion} />
+
+					))}
+
+				</ul>
+			</div>
+
+		);
+	}
+	else {
+		return (
+			<div>
+				<h2>veuillez entrer votre summoner name</h2>
+
+			</div>
+		)
+	}
 };
 
 export default Champ;

@@ -13,8 +13,6 @@ class Name extends Component {
 	};
 
 
-
-
 	render() {
 
 		const { name } = this.state;
@@ -30,8 +28,10 @@ class Name extends Component {
 
 				{<Summoner name={name} />}
 
+
 			</div>
 		);
+
 	}
 };
 
