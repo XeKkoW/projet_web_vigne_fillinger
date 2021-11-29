@@ -1,21 +1,23 @@
-import React from 'react';
-import Home from './pages/Homes';
-import './App.css';
-import { BrowserRouter, Switch, Route } from "react-router-dom"
+import React from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Notfound from './pages/Notfound';
+
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" component = {Home} />
+        <Route path="/" exact component={Home} />
+        <Route component={Notfound} />
       </Switch>
     </BrowserRouter>
-      /*<div className="App">
-        <h1>Hello Magueule</h1>
-        <Home/>
-      </div>*/
+
+
   );
 }
 
 
 export default App;
+
+
