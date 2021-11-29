@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import FreeChamp from './FreeChamp';
-import champions from 'lol-champions'
 import Summoner from './Summoner';
+import Name from './Name';
 
 
 
@@ -27,8 +27,7 @@ const Champ = () => {
 		<div className="champ">
 
 			{console.log(dataFreeChamp)}
-			<Summoner />
-
+			<Name />
 
 			<ul className="champ-list">
 
