@@ -1,5 +1,7 @@
 import React from 'react';
 import Champ from '../components/Champ';
+import '../styles/style.css';
+
 
 const Home = () => {
 	return (

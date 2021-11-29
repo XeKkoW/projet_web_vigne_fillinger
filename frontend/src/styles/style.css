@@ -1,0 +1,22 @@
+
+
+.blue {
+    color: blue;
+}
+
+.champ-list {
+    color: red;
+    list-style-type: none;
+}
+
+.home {
+    
+    padding: 0;
+}
+
+.fond {
+    background-image: url(https://nexus.leagueoflegends.com/wp-content/uploads/2019/09/WORLDS_Hero-Optimized_tet6rcp8js7lbk8ypf0d.jpg);
+    background-attachment: fixed;
+    position: absolute;
+    padding: 0;
+}
