@@ -12,22 +12,31 @@ class Name extends Component {
 		this.setState({ name: event.target.value });
 	};
 
+
+
+
 	render() {
+
 		const { name } = this.state;
 		return (
-			<div className="App">
+			<div className="name">
 
 				<input
 					type="text"
-					name="Ville"
+					name="Summoner name"
 					value={name}
 					onChange={this.handleChange}
 				/>
 
-				<Summoner name={name} />
+				{<Summoner name={name} />}
+
 			</div>
 		);
 	}
 };
 
 export default Name;
+/*<button onClick={this.appelSummoner(this.name)}>
+					valider
+				</button>
+				*/

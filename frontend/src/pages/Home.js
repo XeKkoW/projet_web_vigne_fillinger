@@ -4,7 +4,7 @@ import Champ from '../components/Champ';
 const Home = () => {
 	return (
 		<div className="home">
-			<h1>Aceuil</h1>
+			<h1>Accueil</h1>
 			<Champ />
 		</div>
 

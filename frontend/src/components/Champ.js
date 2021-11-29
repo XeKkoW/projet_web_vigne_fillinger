@@ -13,7 +13,7 @@ const Champ = () => {
 
 
 	useEffect(() => {
-		axios.get("https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-9549364e-7295-42cd-892f-e71e28146f96")
+		axios.get("https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-b8fff504-d797-40ca-80be-4205b49a5d1e")
 			.then((res) => {
 				setDataFree(res.data.freeChampionIds)
 
