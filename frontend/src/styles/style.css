@@ -1,30 +1,5 @@
 
 
-.descListe {
-    color: rgb(223, 160, 0);
-    font-weight: bold;
-    font-size: 30px;
-    text-shadow: 0px 5px 5px rgb(0, 0, 0);
-}
-
-.champ-list {
-    list-style-type: none;
-    display: grid;
-    /*grid-template-columns: 25% 25% 25% 25%;*/
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    
-    
-    
-}
-.iconChamp {
-    min-height: 120px;
-    min-width: 120px;
-    max-height: 120px;
-    max-width: 120px;
-    margin: 15px;
-    box-shadow: 0 3px 3px rgba(51, 51, 51, 0.644);
-    
-}
 
 .home {
     text-align: center;
@@ -52,25 +27,53 @@
     /* cursor: pointer;*/
     
 }
-
+/*faire disparaitre icon buggé pour champion manquant*/
 .invisibleChamp {
     display: none;
+}
+
+/*descrptions titre icon champions*/
+.descListe {
+    color: rgb(255, 220, 133);
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0px 5px 5px rgb(0, 0, 0);
+}
+/*rangement icon champions*/
+.champ-list {
+    list-style-type: none;
+    display: grid;
+    /*grid-template-columns: 25% 25% 25% 25%;*/
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+.iconChamp {
+    min-height: 120px;
+    min-width: 120px;
+    max-height: 120px;
+    max-width: 120px;
+    margin: 15px;
+    box-shadow: 0 3px 3px rgba(51, 51, 51, 0.644);
+    
 }
 
 .AffichageNom{
     font-size: 300%;
     font-weight: bold;
     text-shadow: 0px 7px 7px rgb(0, 0, 0);
-    color: rgb(255, 136, 57);
+    color: rgb(255, 216, 190);
 }
 .boutonAccueil {
     size: 200%;
-    background-color: #e6ca4d;
+    background-color: #ffeea3;
     border-radius: 5px;
 }
 .boutonAccueil:hover {
-    background-color: #ffec98;
+    background-color: #f8e280;
 }
+/*
+test d'une personne lvl1:
+unoJeVlus5YljACU
+*/
 .inputNomJoueur {
     min-height: 30px;
     min-width: 180px;
@@ -80,9 +83,8 @@
     border-radius: 5px;
 }
 .titreInput {
-    
     font-size: 300%;
     font-weight: bold;
     text-shadow: 0px 7px 7px rgb(0, 0, 0);
-    color: rgb(223, 160, 0);
+    color: rgb(255, 220, 133);
 }
