@@ -9,7 +9,6 @@ const Home = () => {
 	return (
 		<div className="home">
 			<Navigation/>
-			<h1>Ajouter Nav Ici</h1>
 			<Name />
 		</div>
 

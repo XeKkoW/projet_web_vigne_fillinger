@@ -6,7 +6,7 @@ import Mastery from './Mastery';
 import '../styles/style.css';
 
 const API_URL = "https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/";
-const API_KEY = "RGAPI-b8fff504-d797-40ca-80be-4205b49a5d1e";
+const API_KEY = "RGAPI-6f32eaf0-ce10-46b7-b22c-69a9ee0a836e";
 
 const Summoner = (props) => {
 

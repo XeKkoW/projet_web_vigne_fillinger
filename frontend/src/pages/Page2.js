@@ -9,7 +9,10 @@ const Page2 = () => {
 	return (
 		<div className="page2">
             <Navigation/>
-			
+            <div className="supportPage2">
+                
+                <h1>PAGE SECONDAIRE</h1>
+            </div>
 		</div>
 
 	);

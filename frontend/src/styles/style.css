@@ -4,8 +4,6 @@
 
 
 .fond {
-    display: grid;
-    grid-template-columns: 1fr;
     background-image: url(https://nexus.leagueoflegends.com/wp-content/uploads/2019/09/WORLDS_Hero-Optimized_tet6rcp8js7lbk8ypf0d.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -21,7 +19,19 @@
 
 
 .navigation {
-    display: grid;
+    margin: 20px;
+    display: flex;
+    
+}
+.navigation a{
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+}
+/*Pour agir sur le lien de la page sur laquelle on est*/
+.nav-active{
+    font-weight: bold;
+    
 }
 
 
@@ -31,7 +41,7 @@
 .home {
     text-align: center;
 }
-/*Body*/
+/*fond gris clair*/
 .name {
     margin-top: 2%;
     margin-left: 8%;
@@ -40,13 +50,10 @@
     box-shadow: 0px 5px 10px #000000;
     border-radius: 5px;
 }
-
-
 /*faire disparaitre icon buggé pour champion manquant*/
 .invisibleChamp {
     display: none;
 }
-
 /*descrptions titre icon champions*/
 .descListe {
     color: rgb(255, 220, 133);
@@ -102,6 +109,7 @@
 test d'une personne lvl1:
 unoJeVlus5YljACU
 */
+/*case de remplissage du nom*/
 .inputNomJoueur {
     min-height: 30px;
     min-width: 180px;
@@ -110,9 +118,35 @@ unoJeVlus5YljACU
     background-color: rgba(255, 255, 255, 0.637);
     border-radius: 5px;
 }
+/*titre d'accueil*/
 .titreInput {
     font-size: 300%;
     font-weight: bold;
     text-shadow: 0px 7px 7px rgb(0, 0, 0);
     color: rgb(255, 220, 133);
+    padding-top: 40px;
+}
+
+
+/*Page2*/
+
+
+.page2 {
+    background-image: URL("../styles/img/backgroundPage2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    /*size: 1920px, 1080px;*/
+    position: absolute;
+    /* cursor: pointer;*/  
+    text-align: center;
+}
+.supportPage2 {
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: rgba(202, 202, 202, 0.281);
+    box-shadow: 0px 5px 10px #000000;
+    border-radius: 5px;
 }
