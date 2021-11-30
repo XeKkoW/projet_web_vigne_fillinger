@@ -1,0 +1,46 @@
+
+
+.descListe {
+    color: gold;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    text-shadow: 0px 2px 2px rgba(218, 91, 32, 0.61);
+}
+
+.champ-list {
+    list-style-type: none;
+    display: grid;
+    /*grid-template-columns: 25% 25% 25% 25%;*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    
+    
+}
+.iconChamp {
+    min-height: 120px;
+    min-width: 120px;
+    max-height: 120px;
+    max-width: 120px;
+    margin: 15px;
+    box-shadow: 0 3px 3px rgba(51, 51, 51, 0.644);
+    
+}
+
+.home {
+    text-align: center;
+}
+
+.fond {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url(https://nexus.leagueoflegends.com/wp-content/uploads/2019/09/WORLDS_Hero-Optimized_tet6rcp8js7lbk8ypf0d.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    /*size: 1920px, 1080px;*/
+    position: absolute;
+    /* cursor: pointer;*/
+    
+}
