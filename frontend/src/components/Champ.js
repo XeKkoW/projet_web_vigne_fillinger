@@ -45,7 +45,7 @@ const Champ = (props) => {
 		return (
 			<div className="champ">
 
-
+			<p className="descListe">Champions gratuits de la semaine</p>
 
 
 				<ul className="champ-list">

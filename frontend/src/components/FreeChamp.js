@@ -54,7 +54,7 @@ const FreeChamp = (props) => {
 		return (
 			< div >
 
-				<li>
+				<li className="iconChamp">
 
 
 					{goodId(champion)}
