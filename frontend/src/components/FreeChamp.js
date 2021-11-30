@@ -60,8 +60,9 @@ const FreeChamp = (props) => {
 					{goodId(champion)}
 					{ifName()}
 					{images(champion)}
-
+					
 					<img src={image} alt={name} />
+					<p className="nameChamp">~ {name} ~</p>
 
 
 

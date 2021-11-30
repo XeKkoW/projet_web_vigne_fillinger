@@ -39,7 +39,7 @@ const Summoner = (props) => {
 	return (
 		<div>
 
-			<button className="boutonAccueil" onClick={playOk}>
+			<button className="boutonNomJoueur" onClick={playOk}>
 				ENTRER
 			</button>
 			

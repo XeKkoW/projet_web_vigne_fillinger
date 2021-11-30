@@ -4,16 +4,15 @@ import Name from '../components/Name';
 import Navigation from '../components/Navigation';
 import '../styles/style.css';
 
-const Home = () => {
+const Page2 = () => {
 
 	return (
-		<div className="home">
-			<Navigation/>
-			<h1>Ajouter Nav Ici</h1>
-			<Name />
+		<div className="page2">
+            <Navigation/>
+			
 		</div>
 
 	);
 };
 
-export default Home;
+export default Page2;
