@@ -38,7 +38,3 @@ class Name extends Component {
 };
 
 export default Name;
-/*<button onClick={this.appelSummoner(this.name)}>
-					valider
-				</button>
-				*/

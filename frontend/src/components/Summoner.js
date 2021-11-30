@@ -40,10 +40,10 @@ const Summoner = (props) => {
 		<div>
 
 			<button className="boutonAccueil" onClick={playOk}>
-				valider
+				ENTRER
 			</button>
-
-			<h2 className="AffichageNom">-{data.name}-</h2>
+			
+			<h2 className="AffichageNom">- {data.name} -</h2>
 			<Champ level={data.summonerLevel} />
 			<Mastery id={data.id} />
 		</div>
