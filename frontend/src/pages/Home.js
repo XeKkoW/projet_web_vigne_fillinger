@@ -1,6 +1,7 @@
 import React from 'react';
 import Champ from '../components/Champ';
 import Name from '../components/Name';
+import '../styles/style.css';
 
 const Home = () => {
 

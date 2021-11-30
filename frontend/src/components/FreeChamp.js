@@ -1,6 +1,7 @@
 import React from 'react';
 import champions from 'lol-champions'
 import { useEffect } from 'react/cjs/react.development';
+import '../styles/style.css';
 
 const FreeChamp = (props) => {
 	const champion = props.champion

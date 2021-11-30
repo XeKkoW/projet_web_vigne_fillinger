@@ -1,6 +1,7 @@
 import React from 'react';
 import { Component } from 'react';
 import Summoner from './Summoner';
+import '../styles/style.css';
 
 
 class Name extends Component {
