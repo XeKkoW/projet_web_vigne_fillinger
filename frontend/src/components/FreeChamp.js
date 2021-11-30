@@ -1,6 +1,7 @@
 import React from 'react';
 import champions from 'lol-champions'
 import { useEffect } from 'react/cjs/react.development';
+import '../styles/style.css';
 
 const FreeChamp = (props) => {
 	const champion = props.champion
@@ -53,7 +54,7 @@ const FreeChamp = (props) => {
 		return (
 			< div >
 
-				<li>
+				<li className="iconChamp">
 
 
 					{goodId(champion)}
@@ -72,7 +73,7 @@ const FreeChamp = (props) => {
 	}
 	else {
 		return (
-			<div>
+			<div className='invisibleChamp'>
 
 			</div>
 		)

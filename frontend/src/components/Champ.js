@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import FreeChamp from './FreeChamp';
+import '../styles/style.css';
 
 
 
@@ -44,7 +45,7 @@ const Champ = (props) => {
 		return (
 			<div className="champ">
 
-
+			<p className="descListe">Champions gratuits de la semaine</p>
 
 
 				<ul className="champ-list">
