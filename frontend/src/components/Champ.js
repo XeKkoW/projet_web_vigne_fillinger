@@ -16,14 +16,14 @@ const Champ = (props) => {
 
 
 		if (level > 10) {
-			axios.get("https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-b8fff504-d797-40ca-80be-4205b49a5d1e")
+			axios.get("https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-6f32eaf0-ce10-46b7-b22c-69a9ee0a836e")
 				.then((res) => {
 					setDataFree(res.data.freeChampionIds)
 
 				});
 		}
 		else if (level <= 10 && level > 0) {
-			axios.get("https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-b8fff504-d797-40ca-80be-4205b49a5d1e")
+			axios.get("https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-6f32eaf0-ce10-46b7-b22c-69a9ee0a836e")
 				.then((res) => {
 					setDataFree(res.data.freeChampionIdsForNewPlayers)
 
@@ -45,7 +45,7 @@ const Champ = (props) => {
 		return (
 			<div className="champ">
 
-			<p className="descListe">Champions gratuits de la semaine</p>
+				<p className="descListe">Champions gratuits de la semaine</p>
 
 
 				<ul className="champ-list">
