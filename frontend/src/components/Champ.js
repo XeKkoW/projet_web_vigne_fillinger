@@ -26,7 +26,7 @@ const Champ = () => {
 
 			{console.log(dataFreeChamp)}
 			
-			<h1 className="blue">Champions gratuits de la semaine</h1>
+			<p className="descListe">Champions gratuits de la semaine</p>
 
 			<ul className="champ-list">
 

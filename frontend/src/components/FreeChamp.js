@@ -1,5 +1,6 @@
 import React from 'react';
 import champions from 'lol-champions'
+import '../styles/style.css';
 
 const FreeChamp = (props) => {
 	const champion = props.champion
@@ -43,7 +44,7 @@ const FreeChamp = (props) => {
 
 	return (
 		<div>
-			<li>
+			<li className="iconChamp">
 				{images(champion)}
 				{goodId(champion)}
 				{ifName}
