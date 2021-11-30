@@ -40,7 +40,7 @@ const FreeChamp = (props) => {
 		champions.forEach((el) => {
 			if (el.key == id) {
 				image = el.icon
-				console.log(image);
+				//console.log(image);
 
 
 

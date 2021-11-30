@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, { useEffect } from 'react';
 import { useState } from 'react/cjs/react.development';
 import Champ from './Champ';
+import Mastery from './Mastery';
+
 
 const API_URL = "https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/";
 const API_KEY = "RGAPI-b8fff504-d797-40ca-80be-4205b49a5d1e";
@@ -49,6 +51,7 @@ const Summoner = (props) => {
 
 			<h2>{data.name}</h2>
 			<Champ level={data.summonerLevel} />
+			<Mastery id={data.id} />
 		</div>
 	);
 };
