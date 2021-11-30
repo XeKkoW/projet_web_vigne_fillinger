@@ -7,12 +7,15 @@ import '../src/styles/style.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <div className="fond">
+      <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route component={NotFound} />
       </Switch>
-    </BrowserRouter>
+      </BrowserRouter>
+    </div>
+    
 
   );
 }
