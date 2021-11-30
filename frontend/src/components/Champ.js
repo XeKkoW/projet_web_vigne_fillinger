@@ -47,7 +47,7 @@ const Champ = (props) => {
 
 			<p className="descListe">Tes Champions Gratuits de la Semaine</p>
 
-
+			
 				<ul className="champ-list">
 					{dataFreeChamp.map((champion) => (
 						<FreeChamp champion={champion} />
