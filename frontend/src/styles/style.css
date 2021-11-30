@@ -1,11 +1,10 @@
 
 
 .descListe {
-    color: gold;
+    color: rgb(223, 160, 0);
     font-weight: bold;
-    font-size: 15px;
-    text-align: center;
-    text-shadow: 0px 2px 2px rgba(218, 91, 32, 0.61);
+    font-size: 30px;
+    text-shadow: 0px 5px 5px rgb(0, 0, 0);
 }
 
 .champ-list {
@@ -29,6 +28,9 @@
 
 .home {
     text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(0, 0, 0, 0.219);
 }
 
 .fond {
@@ -47,4 +49,32 @@
 
 .invisibleChamp {
     display: none;
+}
+
+.AffichageNom{
+    font-size: 300%;
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
+    color: rgb(223, 89, 0);
+}
+.boutonAccueil {
+    size: 200%;
+    background-color: #e6ca4d;
+    border-radius: 5px;
+}
+.boutonAccueil:hover {
+    background-color: #ffec98;
+}
+.inputNomJoueur {
+    min-height: 30px;
+    min-width: 180px;
+    margin: 20px;
+    border: none;
+}
+.titreInput {
+    
+    font-size: 300%;
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
+    color: rgb(223, 160, 0);
 }
