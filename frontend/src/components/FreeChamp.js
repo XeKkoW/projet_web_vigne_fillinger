@@ -73,7 +73,7 @@ const FreeChamp = (props) => {
 	}
 	else {
 		return (
-			<div>
+			<div className='invisibleChamp'>
 
 			</div>
 		)
