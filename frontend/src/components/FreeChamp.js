@@ -1,12 +1,19 @@
 import React from 'react';
 import champions from 'lol-champions'
 import '../styles/style.css';
+import { useEffect } from 'react/cjs/react.development';
 
 const FreeChamp = (props) => {
 	const champion = props.champion
-	//console.log(champion);
+	//console.log(champions);
 	var name = "";
 	var image = "";
+
+
+
+
+
+
 
 	const goodId = (props) => {
 		const id = props
@@ -27,34 +34,53 @@ const FreeChamp = (props) => {
 
 	const images = (props) => {
 		const id = props
+		//console.log(id);
+
+
 
 		champions.forEach((el) => {
 			if (el.key == id) {
 				image = el.icon
-				//console.log(image);
+				console.log(image);
+
 
 
 			}
 		})
 	}
 
+	images(champion)
+	if (image != "") {
+		return (
+			< div >
+
+				<li className="iconChamp">
+
+
+					{goodId(champion)}
+					{ifName()}
+					{images(champion)}
+
+					<img src={image} alt={name} />
 
 
 
+				</li>
 
-	return (
-		<div>
-			<li className="iconChamp">
-				{images(champion)}
-				{goodId(champion)}
-				{ifName}
-				<img src={image} alt={name} />
+			</div >
+		);
+
+	}
+	else {
+		return (
+			<div>
+
+			</div>
+		)
+	}
 
 
 
-			</li>
-		</div>
-	);
 };
 
 export default FreeChamp;
