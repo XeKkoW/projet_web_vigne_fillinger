@@ -8,7 +8,6 @@ import ShowMastery from './ShowMastery';
 
 const API_URL = "https://euw1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/"
 const API_KEY = "RGAPI-6f32eaf0-ce10-46b7-b22c-69a9ee0a836e"
-//?api_key=
 
 const Mastery = (props) => {
 	const summonerId = props.id
@@ -57,19 +56,3 @@ const Mastery = (props) => {
 };
 
 export default Mastery;
-
-/*
-const dataSetting = () => {
-			console.log("aaaaaaaaaaaaaaaaa")
-			const champObj = Object.keys(data).map((i) => data[i]);
-			const sortedArray = champObj
-
-			sortedArray.length = 3
-			setGoodData(sortedArray)
-		}
-		dataSetting()
-
-		{console.log(goodData)}
-
-		<h1>{data.championLevel}</h1>
-*/

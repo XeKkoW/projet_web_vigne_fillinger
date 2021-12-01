@@ -35,7 +35,7 @@
 }
 
 
-/*Page d'Accueil*/
+/*Page Perso*/
 
 
 .home {
@@ -61,7 +61,7 @@
     font-size: 30px;
     text-shadow: 0px 5px 5px rgb(0, 0, 0);
 }
-/*rangement icon champions*/
+/*rangement icon champions gratuits*/
 .champ-list {
     list-style-type: none;
     display: grid;
@@ -70,15 +70,7 @@
     margin: 0px;
     padding: 0px;
 }
-.mastery-List {
-    list-style-type: none;
-    display: grid;
-    /*grid-template-columns: 25% 25% 25% 25%;*/
-    grid-template-columns: 1fr 1fr 1fr; 
-    margin: 0px;
-    padding: 0px;
-}
-/*icon champions*/
+/*icon champions gratuits*/
 .iconChamp {
     min-height: 120px;
     min-width: 120px;
@@ -87,7 +79,6 @@
     margin: auto;
     margin-bottom: 60px;
     box-shadow: 2px 5px 5px rgb(0, 0, 0);
-
 }
 /*nom icon champions*/
 .nameChamp {
@@ -96,8 +87,42 @@
     text-shadow: 0px 7px 7px rgb(0, 0, 0);
     color: rgb(255, 208, 91);
 }
+/*rangement icon champions mastery*/
+.mastery-List {
+    list-style-type: none;
+    display: grid;
+    /*grid-template-columns: 25% 25% 25% 25%;*/
+    grid-template-columns: 1fr 1fr 1fr; 
+    margin: 0px;
+    padding: 0px;
+}
+/*icon champions mastery*/
+.mastery-List li {
+    min-height: 120px;
+    min-width: 120px;
+    max-height: 120px;
+    max-width: 120px;
+    margin: auto;
+    margin-bottom: 60px;
+    box-shadow: 2px 5px 5px rgb(0, 0, 0);
+}
 /*nom joueur*/
-.AffichageNom{
+.affichageNom{
+    font-size: 300%;
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
+    color: rgb(255, 216, 190);
+}
+/*LVL mastery*/
+.masteryLVL {
+
+}
+/*points de mastery*/
+.masteryPTS {
+
+}
+/*LVL joueur*/
+.affichageLVL {
     font-size: 300%;
     font-weight: bold;
     text-shadow: 0px 7px 7px rgb(0, 0, 0);
@@ -136,7 +161,7 @@ unoJeVlus5YljACU
 }
 
 
-/*Page2*/
+/*Page d'Accueil*/
 
 
 .page2 {

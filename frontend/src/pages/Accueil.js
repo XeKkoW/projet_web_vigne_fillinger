@@ -11,7 +11,7 @@ const Accueil = () => {
             <Navigation/>
             <div className="supportPage2">
                 
-                <h1>PAGE SECONDAIRE</h1>
+                <h1>PAGE D'ACCUEIL</h1>
             </div>
 		</div>
 

@@ -80,8 +80,8 @@ const ShowMastery = (props) => {
 					images(champion.championId)
 				}
 				<img src={imageChamp} alt={name} />
-				<h1>{champion.championLevel}</h1>
-				<h2>{champion.championPoints}</h2>
+				<h1 className="masteryLVL">{champion.championLevel}</h1>
+				<h2 className="masteryPTS">{champion.championPoints}</h2>
 			</li>
 		</div>
 	);
