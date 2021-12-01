@@ -4,15 +4,18 @@ import Name from '../components/Name';
 import Navigation from '../components/Navigation';
 import '../styles/style.css';
 
-const Home = () => {
+const Page2 = () => {
 
 	return (
-		<div className="home">
-			<Navigation/>
-			<Name />
+		<div className="page2">
+            <Navigation/>
+            <div className="supportPage2">
+                
+                <h1>PAGE SECONDAIRE</h1>
+            </div>
 		</div>
 
 	);
 };
 
-export default Home;
+export default Page2;

@@ -1,0 +1,152 @@
+
+
+/*Background Général*/
+
+
+.fond {
+    background-image: url(https://nexus.leagueoflegends.com/wp-content/uploads/2019/09/WORLDS_Hero-Optimized_tet6rcp8js7lbk8ypf0d.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    /*size: 1920px, 1080px;*/
+    position: absolute;
+    /* cursor: pointer;*/   
+}
+
+
+/*Navigation*/
+
+
+.navigation {
+    margin: 20px;
+    display: flex;
+    
+}
+.navigation a{
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+}
+/*Pour agir sur le lien de la page sur laquelle on est*/
+.nav-active{
+    font-weight: bold;
+    
+}
+
+
+/*Page d'Accueil*/
+
+
+.home {
+    text-align: center;
+}
+/*fond gris clair*/
+.name {
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: rgba(0, 0, 0, 0.281);
+    box-shadow: 0px 5px 10px #000000;
+    border-radius: 5px;
+}
+/*faire disparaitre icon buggé pour champion manquant*/
+.invisibleChamp {
+    display: none;
+}
+/*descrptions titre icon champions*/
+.descListe {
+    color: rgb(255, 220, 133);
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0px 5px 5px rgb(0, 0, 0);
+}
+/*rangement icon champions*/
+.champ-list {
+    list-style-type: none;
+    display: grid;
+    /*grid-template-columns: 25% 25% 25% 25%;*/
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    margin: 0px;
+    padding: 0px;
+}
+/*icon champions*/
+.iconChamp {
+    min-height: 120px;
+    min-width: 120px;
+    max-height: 120px;
+    max-width: 120px;
+    margin: auto;
+    margin-bottom: 60px;
+    box-shadow: 2px 5px 5px rgb(0, 0, 0);
+
+}
+/*nom icon champions*/
+.nameChamp {
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
+    color: rgb(255, 208, 91);
+}
+/*nom joueur*/
+.AffichageNom{
+    font-size: 300%;
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
+    color: rgb(255, 216, 190);
+}
+/*bouton validation nom*/
+.boutonNomJoueur {
+    size: 200%;
+    background-color: #ffeea3;
+    border-radius: 3px;
+    border: none;
+}
+.boutonNomJoueur:hover {
+    background-color: #f8e280;
+}
+/*
+test d'une personne lvl1:
+unoJeVlus5YljACU
+*/
+/*case de remplissage du nom*/
+.inputNomJoueur {
+    min-height: 30px;
+    min-width: 180px;
+    margin: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.637);
+    border-radius: 5px;
+}
+/*titre d'accueil*/
+.titreInput {
+    font-size: 300%;
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
+    color: rgb(255, 220, 133);
+    padding-top: 40px;
+}
+
+
+/*Page2*/
+
+
+.page2 {
+    background-image: URL("../styles/img/backgroundPage2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    /*size: 1920px, 1080px;*/
+    position: absolute;
+    /* cursor: pointer;*/  
+    text-align: center;
+}
+.supportPage2 {
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: rgba(202, 202, 202, 0.281);
+    box-shadow: 0px 5px 10px #000000;
+    border-radius: 5px;
+}
