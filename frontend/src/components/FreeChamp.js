@@ -53,14 +53,14 @@ const FreeChamp = (props) => {
 	if (image != "") {
 		return (
 			< div >
-				
+
 				<li className="iconChamp">
 
 
 					{goodId(champion)}
 					{ifName()}
 					{images(champion)}
-					
+
 					<img src={image} alt={name} />
 					<p className="nameChamp">~ {name} ~</p>
 

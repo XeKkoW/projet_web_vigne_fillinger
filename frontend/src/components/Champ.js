@@ -3,7 +3,8 @@ import axios from 'axios';
 import FreeChamp from './FreeChamp';
 import '../styles/style.css';
 
-
+const API_URL = "https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key="
+const API_KEY = "RGAPI-2e85ef4b-9e1b-4a6d-bd72-1fd397b5c47c"
 
 
 const Champ = (props) => {
@@ -16,14 +17,14 @@ const Champ = (props) => {
 
 
 		if (level > 10) {
-			axios.get("https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-6f32eaf0-ce10-46b7-b22c-69a9ee0a836e")
+			axios.get(`${API_URL}${API_KEY}`)
 				.then((res) => {
 					setDataFree(res.data.freeChampionIds)
 
 				});
 		}
 		else if (level <= 10 && level > 0) {
-			axios.get("https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-6f32eaf0-ce10-46b7-b22c-69a9ee0a836e")
+			axios.get(`${API_URL}${API_KEY}`)
 				.then((res) => {
 					setDataFree(res.data.freeChampionIdsForNewPlayers)
 
@@ -48,10 +49,10 @@ const Champ = (props) => {
 				<p className="descListe">Champions gratuits de la semaine</p>
 
 
-			
+
 				<ul className="champ-list">
 					{dataFreeChamp.map((champion) => (
-						<FreeChamp champion={champion} />
+						<FreeChamp champion={champion} key={champion.name} />
 
 					))}
 
@@ -63,7 +64,7 @@ const Champ = (props) => {
 	else {
 		return (
 			<div>
-				
+
 
 			</div>
 		)
