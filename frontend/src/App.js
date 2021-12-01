@@ -16,7 +16,7 @@ function App() {
           <Route path="/page2" exact component={Page2} />
 
           <Route component={NotFound} />
-          
+
         </Switch>
       </BrowserRouter>
     </div>
