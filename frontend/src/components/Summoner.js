@@ -14,6 +14,7 @@ const Summoner = (props) => {
 	var level = 0;
 	const [data, setData] = useState([]);
 	const [play, setPlay] = useState(false);
+	const [playMastery, setPlayMastery] = useState(false);
 
 
 
@@ -24,6 +25,7 @@ const Summoner = (props) => {
 				.then((res) => {
 					setData(res.data);
 					setPlay(false);
+
 
 
 				});
@@ -44,8 +46,11 @@ const Summoner = (props) => {
 			</button>
 			
 			<h2 className="AffichageNom">- {data.name} -</h2>
+			
+			<Mastery id={data.id} play={playMastery} />
 			<Champ level={data.summonerLevel} />
-			<Mastery id={data.id} />
+
+			{console.log(data.id)}
 		</div>
 	);
 };
