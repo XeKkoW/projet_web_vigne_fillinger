@@ -4,7 +4,7 @@ import Name from '../components/Name';
 import Navigation from '../components/Navigation';
 import '../styles/style.css';
 
-const Page2 = () => {
+const Accueil = () => {
 
 	return (
 		<div className="page2">
@@ -18,4 +18,4 @@ const Page2 = () => {
 	);
 };
 
-export default Page2;
+export default Accueil;
