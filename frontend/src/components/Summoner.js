@@ -44,8 +44,8 @@ const Summoner = (props) => {
 			<button className="boutonNomJoueur" onClick={playOk}>
 				ENTRER
 			</button>
-
-			<h2 className="AffichageNom">- {data.name} -</h2>
+			
+			<h2 className="affichageNom">- {data.name} -</h2>
 			<h2 className="affichageLVL"> {data.summonerLevel} </h2>
 
 			<Rank id={data.id} />

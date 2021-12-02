@@ -85,4 +85,3 @@ const FreeChamp = (props) => {
 };
 
 export default FreeChamp;
-//<img src={image} alt={name} />

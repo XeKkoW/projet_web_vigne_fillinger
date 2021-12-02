@@ -4,7 +4,7 @@ import Name from '../components/Name';
 import Navigation from '../components/Navigation';
 import '../styles/style.css';
 
-const Home = () => {
+const PagePerso = () => {
 
 	return (
 		<div className="home">
@@ -15,4 +15,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default PagePerso;

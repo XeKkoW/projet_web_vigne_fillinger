@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import PagePerso from './pages/PagePerso';
 import NotFound from './pages/NotFound';
-import Page2 from './pages/Page2';
+import Accueil from './pages/Accueil';
 import '../src/styles/style.css';
 
 
@@ -12,8 +12,8 @@ function App() {
     <div className="fond">
       <BrowserRouter>
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/page2" exact component={Page2} />
+          <Route path="/pagePerso" exact component={PagePerso} />
+          <Route path="/" exact component={Accueil} />
 
           <Route component={NotFound} />
 

@@ -1,61 +1,24 @@
 import React from 'react';
 import { useState } from 'react';
 import champions from 'lol-champions'
+var level = 0
 
 const ShowMastery = (props) => {
 	const champion = props.champion;
-	var image = "";
 	var imageChamp = "";
 	var name = "";
 
-	const mastery = (props) => {
-		const level = props.level;
-		if (level == 1) {
-			image = ""
-		}
-		else if (level == 2) {
-			image = ""
-		}
-		else if (level == 3) {
-			image = ""
-		}
-		else if (level == 4) {
-			image = ""
-		}
-		else if (level == 5) {
-			image = ""
-		}
-		else if (level == 6) {
-			image = ""
-		}
-		else if (level == 7) {
-			image = ""
-		}
-	}
-
-
 	const images = (props) => {
 		const id = props
-		//console.log(id);
-
-
-
 		champions.forEach((el) => {
 			if (el.key == id) {
 				imageChamp = el.icon
-
-
-
-
 			}
 		})
 	}
 
-
 	const goodId = (props) => {
 		const id = props
-		//	console.log(id);
-
 		champions.forEach((el) => {
 			if (el.key == id) {
 				name = el.name
@@ -69,22 +32,137 @@ const ShowMastery = (props) => {
 		}
 	}
 
-
-	return (
-		<div>
-			<li>
-				{
-					mastery(champion.championLevel),
-					goodId(champion.championId),
-					ifName(),
-					images(champion.championId)
-				}
-				<img src={imageChamp} alt={name} />
-				<h1>{champion.championLevel}</h1>
-				<h2>{champion.championPoints}</h2>
-			</li>
-		</div>
-	);
+	const mastery = (props) => {
+		level = props;
+		console.log(level);
+	}
+	mastery(champion.championLevel)
+		if (level == 1) {
+			return (
+				<div>
+					<li>
+						{
+							mastery(champion.championLevel),
+							goodId(champion.championId),
+							ifName(),
+							images(champion.championId)
+						}
+						<img src={imageChamp} alt={name} />
+						<img className="masteryIMG1" src= "../src/styles/img/mastery1.png"/>
+						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
+					</li>
+				</div>
+			);
+		}
+		else if (level == 2) {
+			return (
+				<div>
+					<li>
+						{
+							mastery(champion.championLevel),
+							goodId(champion.championId),
+							ifName(),
+							images(champion.championId)
+						}
+						<img src={imageChamp} alt={name} />
+						<img className="masteryIMG2" src= "../src/styles/img/mastery2.png"/>
+						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
+					</li>
+				</div>
+			);
+		}
+		else if (level == 3) {
+			return (
+				<div>
+					<li>
+						{
+							mastery(champion.championLevel),
+							goodId(champion.championId),
+							ifName(),
+							images(champion.championId)
+						}
+						<img src={imageChamp} alt={name} />
+						<img className="masteryIMG3" src= "../src/styles/img/mastery3.png"/>
+						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
+					</li>
+				</div>
+			);
+		}
+		else if (level == 4) {
+			return (
+				<div>
+					<li>
+						{
+							mastery(champion.championLevel),
+							goodId(champion.championId),
+							ifName(),
+							images(champion.championId)
+						}
+						<img src={imageChamp} alt={name} />
+						<img className="masteryIMG4" src= "../src/styles/img/mastery4.png"/>
+						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
+					</li>
+				</div>
+			);
+		}
+		else if (level == 5) {
+			return (
+				<div>
+					<li>
+						{
+							mastery(champion.championLevel),
+							goodId(champion.championId),
+							ifName(),
+							images(champion.championId)
+						}
+						<img src={imageChamp} alt={name} />
+						<img className="masteryIMG5" src= "../src/styles/img/mastery5.png"/>
+						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
+					</li>
+				</div>
+			);
+		}
+		else if (level == 6) {
+			return (
+				<div>
+					<li>
+						{
+							mastery(champion.championLevel),
+							goodId(champion.championId),
+							ifName(),
+							images(champion.championId)
+						}
+						<img src={imageChamp} alt={name} />
+						<img className="masteryIMG6" src= "../src/styles/img/mastery6.png"/>
+						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
+					</li>
+				</div>
+			);
+		}
+		else if (level == 7) {
+			return (
+				<div>
+					<li>
+						{
+							mastery(champion.championLevel),
+							goodId(champion.championId),
+							ifName(),
+							images(champion.championId)
+						}
+						<img src={imageChamp} alt={name} />
+						<img className="masteryIMG7" src= "../src/styles/img/mastery7.png"/>
+						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
+					</li>
+				</div>
+			);
+		}
+		else {
+			return (
+				<div></div>
+			);
+		}
+	
+	
 };
 
 export default ShowMastery;

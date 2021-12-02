@@ -6,12 +6,11 @@
 .fond {
     background-image: url(https://nexus.leagueoflegends.com/wp-content/uploads/2019/09/WORLDS_Hero-Optimized_tet6rcp8js7lbk8ypf0d.jpg);
     background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
     min-width: 100%;
     min-height: 100%;
-    /*size: 1920px, 1080px;*/
-    position: absolute;
-    /* cursor: pointer;*/   
+    position: absolute;  
 }
 
 
@@ -23,19 +22,57 @@
     display: flex;
     
 }
-.navigation a{
-    margin: 10px;
-    padding: 10px;
-    position: relative;
-}
 /*Pour agir sur le lien de la page sur laquelle on est*/
 .nav-active{
     font-weight: bold;
-    
+}
+.boutonAccueil a {
+    margin: 10px;
+    padding: 15px 30px;
+    color: #2196f3;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+    transition: 2s;
+}
+.boutonAccueil a:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, O O 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+.boutonAccueil a:hover span {
+    position: absolute;
+    display: block;
+}
+.boutonAccueil a span:nth-child(1) {
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+.boutonAccueil a:hover span:nth-child(1) {
+    left: 50%;
+    transition: 1s;
+}
+.boutonAccueil a span:nth-child(3) {
+    bottom: 0;
+    right: -50%;
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+.boutonAccueil a:hover span:nth-child(3) {
+    right: 50%;
+    transition: 1s;
 }
 
 
-/*Page d'Accueil*/
+
+/*Page Perso*/
 
 
 .home {
@@ -50,58 +87,13 @@
     box-shadow: 0px 5px 10px #000000;
     border-radius: 5px;
 }
-/*faire disparaitre icon buggé pour champion manquant*/
-.invisibleChamp {
-    display: none;
-}
-/*descrptions titre icon champions*/
-.descListe {
-    color: rgb(255, 220, 133);
-    font-weight: bold;
-    font-size: 30px;
-    text-shadow: 0px 5px 5px rgb(0, 0, 0);
-}
-/*rangement icon champions*/
-.champ-list {
-    list-style-type: none;
-    display: grid;
-    /*grid-template-columns: 25% 25% 25% 25%;*/
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    margin: 0px;
-    padding: 0px;
-}
-.mastery-List {
-    list-style-type: none;
-    display: grid;
-    /*grid-template-columns: 25% 25% 25% 25%;*/
-    grid-template-columns: 1fr 1fr 1fr; 
-    margin: 0px;
-    padding: 0px;
-}
-/*icon champions*/
-.iconChamp {
-    min-height: 120px;
-    min-width: 120px;
-    max-height: 120px;
-    max-width: 120px;
-    margin: auto;
-    margin-bottom: 60px;
-    box-shadow: 2px 5px 5px rgb(0, 0, 0);
-
-}
-/*nom icon champions*/
-.nameChamp {
-    font-size: 15px;
-    font-weight: bold;
-    text-shadow: 0px 7px 7px rgb(0, 0, 0);
-    color: rgb(255, 208, 91);
-}
-/*nom joueur*/
-.AffichageNom{
+/*titre d'accueil*/
+.titreInput {
     font-size: 300%;
     font-weight: bold;
     text-shadow: 0px 7px 7px rgb(0, 0, 0);
-    color: rgb(255, 216, 190);
+    color: rgb(255, 220, 133);
+    padding-top: 40px;
 }
 /*bouton validation nom*/
 .boutonNomJoueur {
@@ -126,17 +118,179 @@ unoJeVlus5YljACU
     background-color: rgba(255, 255, 255, 0.637);
     border-radius: 5px;
 }
-/*titre d'accueil*/
-.titreInput {
+/*nom joueur*/
+.affichageNom{
     font-size: 300%;
     font-weight: bold;
     text-shadow: 0px 7px 7px rgb(0, 0, 0);
+    color: rgb(255, 216, 190);
+}
+/*LVL joueur*/
+.affichageLVL {
+    display: block;
+    font-size: 300%;
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
+    color: rgb(255, 208, 91);
+}
+/*rangement icon champions mastery*/
+.mastery-List {
+    list-style-type: none;
+    display: grid;
+    /*grid-template-columns: 25% 25% 25% 25%;*/
+    grid-template-columns: 1fr 1fr 1fr; 
+    margin: 0px;
+    padding: 0px;
+}
+/*icon champions mastery*/
+.mastery-List li {
+    min-height: 120px;
+    min-width: 120px;
+    max-height: 120px;
+    max-width: 120px;
+    margin: auto;
+    margin-bottom: 60px;
+    box-shadow: 2px 5px 5px rgb(0, 0, 0);
+}
+/*image mastery 1*/
+.masteryIMG1 {
+    background-image: url("../styles/img/mastery1.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    
+    min-height: 70px;
+    min-width: 70px;
+
+    margin: 15px;
+    
+}
+/*image mastery 2*/
+.masteryIMG2 {
+    background-image: url("../styles/img/mastery2.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    
+    min-height: 70px;
+    min-width: 70px;
+
+    margin: 15px;
+    
+}
+/*image mastery 3*/
+.masteryIMG3 {
+    background-image: url("../styles/img/mastery3.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    
+    min-height: 70px;
+    min-width: 70px;
+
+    margin: 15px;
+    
+}
+/*image mastery 4*/
+.masteryIMG4 {
+    background-image: url("../styles/img/mastery4.png");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    
+    min-height: 80px;
+    min-width: 80px;
+
+    margin: 10px;
+    
+}
+/*image mastery 5*/
+.masteryIMG5 {
+    background-image: url("../styles/img/mastery5.png");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    
+    min-height: 80px;
+    min-width: 80px;
+
+    margin: 10px;    
+}
+/*image mastery 6*/
+.masteryIMG6 {
+    background-image: url("../styles/img/mastery6.png");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    
+    min-height: 80px;
+    min-width: 80px;
+
+    margin: 10px;
+}
+/*image mastery 7*/
+.masteryIMG7 {
+    background-image: url("../styles/img/mastery7.png");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    
+    min-height: 80px;
+    min-width: 80px;
+
+    margin: 10px;
+}
+/*LVL mastery
+.masteryLVL {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-width: 100%;
+    min-height: 100%;
+}*/
+/*points de mastery*/
+.masteryPTS {
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
+    color: rgb(255, 208, 91);
+}
+.champ {
+    padding-top: 50px;
+}
+/*descrptions titre icon champions*/
+.descListe {
     color: rgb(255, 220, 133);
-    padding-top: 40px;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0px 5px 5px rgb(0, 0, 0);
+    margin-top: 80px;
+}
+/*rangement icon champions gratuits*/
+.champ-list {
+    list-style-type: none;
+    display: grid;
+    /*grid-template-columns: 25% 25% 25% 25%;*/
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    margin: 0px;
+    padding: 0px;
+}
+/*icon champions gratuits*/
+.iconChamp {
+    min-height: 120px;
+    min-width: 120px;
+    max-height: 120px;
+    max-width: 120px;
+    margin: auto;
+    margin-bottom: 60px;
+    box-shadow: 2px 5px 5px rgb(0, 0, 0);
+}
+/*nom icon champions*/
+.nameChamp {
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
+    color: rgb(255, 208, 91);
+}
+/*faire disparaitre icon buggé pour champion manquant*/
+.invisibleChamp {
+    display: none;
 }
 
 
-/*Page2*/
+/*Page d'Accueil*/
 
 
 .page2 {

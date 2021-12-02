@@ -7,12 +7,20 @@ const Navigation = () => {
 
 	return (
 		<div className="navigation">
-			<NavLink exact to="/" activeClassName="nav-active">
+            <div className="boutonAccueil">
+			<NavLink exact to="/" activeClassName="nav-active"> 
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
                 Accueil
             </NavLink>
-            <NavLink exact to="/page2" activeClassName="nav-active">
+            </div>
+            <div className="boutonPagePerso">
+            <NavLink exact to="/pagePerso" activeClassName="nav-active">
                 Page 2
             </NavLink>
+            </div>
 		</div>
 
 	);
