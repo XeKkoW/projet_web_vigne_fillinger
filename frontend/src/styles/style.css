@@ -9,9 +9,7 @@
     background-size: cover;
     min-width: 100%;
     min-height: 100%;
-    /*size: 1920px, 1080px;*/
-    position: absolute;
-    /* cursor: pointer;*/   
+    position: absolute;  
 }
 
 
@@ -91,11 +89,10 @@ unoJeVlus5YljACU
 /*LVL joueur*/
 .affichageLVL {
     display: block;
-    padding-left: 300px;
     font-size: 300%;
     font-weight: bold;
     text-shadow: 0px 7px 7px rgb(0, 0, 0);
-    color: rgb(255, 216, 190);
+    color: rgb(255, 208, 91);
 }
 /*rangement icon champions mastery*/
 .mastery-List {
@@ -120,40 +117,48 @@ unoJeVlus5YljACU
 .masteryIMG1 {
     background-image: url("../styles/img/mastery1.png");
     background-repeat: no-repeat;
-    background-size: 100px 100px;
+    background-size: 70px 70px;
     
-    min-height: 100px;
-    min-width: 100px;
+    min-height: 70px;
+    min-width: 70px;
+
+    margin: 15px;
     
 }
 /*image mastery 2*/
 .masteryIMG2 {
     background-image: url("../styles/img/mastery2.png");
     background-repeat: no-repeat;
-    background-size: 80px 80px;
+    background-size: 70px 70px;
     
-    min-height: 80px;
-    min-width: 80px;
+    min-height: 70px;
+    min-width: 70px;
+
+    margin: 15px;
     
 }
 /*image mastery 3*/
 .masteryIMG3 {
     background-image: url("../styles/img/mastery3.png");
     background-repeat: no-repeat;
-    background-size: 100px 100px;
+    background-size: 70px 70px;
     
-    min-height: 100px;
-    min-width: 100px;
+    min-height: 70px;
+    min-width: 70px;
+
+    margin: 15px;
     
 }
 /*image mastery 4*/
 .masteryIMG4 {
     background-image: url("../styles/img/mastery4.png");
     background-repeat: no-repeat;
-    background-size: 100px 100px;
+    background-size: 80px 80px;
     
-    min-height: 100px;
-    min-width: 100px;
+    min-height: 80px;
+    min-width: 80px;
+
+    margin: 10px;
     
 }
 /*image mastery 5*/
@@ -164,34 +169,38 @@ unoJeVlus5YljACU
     
     min-height: 80px;
     min-width: 80px;
-    
+
+    margin: 10px;    
 }
 /*image mastery 6*/
 .masteryIMG6 {
     background-image: url("../styles/img/mastery6.png");
     background-repeat: no-repeat;
-    background-size: 100px 100px;
+    background-size: 80px 80px;
     
-    min-height: 100px;
-    min-width: 100px;
-    
+    min-height: 80px;
+    min-width: 80px;
+
+    margin: 10px;
 }
 /*image mastery 7*/
 .masteryIMG7 {
     background-image: url("../styles/img/mastery7.png");
     background-repeat: no-repeat;
-    background-size: 100px 100px;
+    background-size: 80px 80px;
     
-    min-height: 100px;
-    min-width: 100px;
-    
+    min-height: 80px;
+    min-width: 80px;
+
+    margin: 10px;
 }
-/*LVL mastery*/
+/*LVL mastery
 .masteryLVL {
-    
+    margin-top: 0px;
+    margin-bottom: 0px;
     min-width: 100%;
     min-height: 100%;
-}
+}*/
 /*points de mastery*/
 .masteryPTS {
     font-size: 15px;
@@ -208,6 +217,7 @@ unoJeVlus5YljACU
     font-weight: bold;
     font-size: 30px;
     text-shadow: 0px 5px 5px rgb(0, 0, 0);
+    margin-top: 80px;
 }
 /*rangement icon champions gratuits*/
 .champ-list {
