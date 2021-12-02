@@ -34,7 +34,7 @@ const ShowMastery = (props) => {
 
 	const mastery = (props) => {
 		level = props;
-		console.log(level);
+		//console.log(level);
 	}
 	mastery(champion.championLevel)
 	if (level == 1) {

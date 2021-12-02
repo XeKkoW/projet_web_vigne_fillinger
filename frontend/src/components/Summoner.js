@@ -5,9 +5,10 @@ import Champ from './Champ';
 import Mastery from './Mastery';
 import '../styles/style.css';
 import Rank from './Rank';
+import Graph from './Graph';
 
 const API_URL = "https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/";
-const API_KEY = "RGAPI-2e85ef4b-9e1b-4a6d-bd72-1fd397b5c47c";
+const API_KEY = "RGAPI-798ec2e5-62e2-42b8-b948-37b4bc57adf3";
 
 const Summoner = (props) => {
 
@@ -44,14 +45,14 @@ const Summoner = (props) => {
 			<button className="boutonNomJoueur" onClick={playOk}>
 				ENTRER
 			</button>
-			
+
 			<h2 className="affichageNom">- {data.name} -</h2>
 			<h2 className="affichageLVL"> {data.summonerLevel} </h2>
 
 			<Rank id={data.id} />
 			<Mastery id={data.id} />
+			<Graph id={data.id} />
 			<Champ level={data.summonerLevel} />
-
 		</div>
 	);
 };
