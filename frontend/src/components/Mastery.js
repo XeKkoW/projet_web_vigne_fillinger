@@ -37,7 +37,8 @@ const Mastery = (props) => {
 	return (
 		<div>
 
-			<ul>
+			<ul className="mastery-List">
+				{console.log(data)}
 				{data.map((champion) => (
 
 					<ShowMastery champion={champion} key={champion.name} />
