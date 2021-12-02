@@ -6,6 +6,7 @@
 .fond {
     background-image: url(https://nexus.leagueoflegends.com/wp-content/uploads/2019/09/WORLDS_Hero-Optimized_tet6rcp8js7lbk8ypf0d.jpg);
     background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
     min-width: 100%;
     min-height: 100%;
@@ -21,16 +22,54 @@
     display: flex;
     
 }
-.navigation a{
-    margin: 10px;
-    padding: 10px;
-    position: relative;
-}
 /*Pour agir sur le lien de la page sur laquelle on est*/
 .nav-active{
     font-weight: bold;
-    
 }
+.boutonAccueil a {
+    margin: 10px;
+    padding: 15px 30px;
+    color: #2196f3;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+    transition: 2s;
+}
+.boutonAccueil a:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, O O 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+.boutonAccueil a:hover span {
+    position: absolute;
+    display: block;
+}
+.boutonAccueil a span:nth-child(1) {
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+.boutonAccueil a:hover span:nth-child(1) {
+    left: 50%;
+    transition: 1s;
+}
+.boutonAccueil a span:nth-child(3) {
+    bottom: 0;
+    right: -50%;
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+.boutonAccueil a:hover span:nth-child(3) {
+    right: 50%;
+    transition: 1s;
+}
+
 
 
 /*Page Perso*/
