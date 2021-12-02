@@ -48,7 +48,7 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG1" src= "../src/styles/img/mastery1.png"/>
+						<img className="masteryIMG1" />
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
 					</li>
 				</div>
@@ -65,7 +65,7 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG2" src= "../src/styles/img/mastery2.png"/>
+						<img className="masteryIMG2" />
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
 					</li>
 				</div>
@@ -82,7 +82,7 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG3" src= "../src/styles/img/mastery3.png"/>
+						<img className="masteryIMG3" />
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
 					</li>
 				</div>
@@ -99,7 +99,7 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG4" src= "../src/styles/img/mastery4.png"/>
+						<img className="masteryIMG4" />
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
 					</li>
 				</div>
@@ -116,7 +116,7 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG5" src= "../src/styles/img/mastery5.png"/>
+						<img className="masteryIMG5" />
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
 					</li>
 				</div>
@@ -133,7 +133,7 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG6" src= "../src/styles/img/mastery6.png"/>
+						<img className="masteryIMG6" />
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
 					</li>
 				</div>
@@ -150,7 +150,7 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG7" src= "../src/styles/img/mastery7.png"/>
+						<img className="masteryIMG7" />
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
 					</li>
 				</div>

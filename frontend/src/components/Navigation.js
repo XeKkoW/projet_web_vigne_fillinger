@@ -18,6 +18,10 @@ const Navigation = () => {
             </div>
             <div className="boutonPagePerso">
             <NavLink exact to="/pagePerso" activeClassName="nav-active">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
                 Page 2
             </NavLink>
             </div>

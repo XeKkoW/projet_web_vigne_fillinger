@@ -19,29 +19,50 @@
 
 .navigation {
     margin: 20px;
+    margin-top: 0px;
     display: flex;
+    background-color: rgba(0, 0, 0, 0.281);
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    box-shadow: 0px 5px 10px #000000;
     
+}
+.navigation a {
+    text-decoration: none;
 }
 /*Pour agir sur le lien de la page sur laquelle on est*/
 .nav-active{
     font-weight: bold;
 }
+/*Bouton de navigation accueil*/
+.boutonAccueil {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
 .boutonAccueil a {
     margin: 10px;
     padding: 15px 30px;
-    color: #2196f3;
+    color: rgb(255, 208, 91);
     position: relative;
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 20px;
-    transition: 2s;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 .boutonAccueil a:hover {
-    color: #255784;
-    background: #2196f3;
-    box-shadow: 0 0 10px #2196f3, O O 40px #2196f3, 0 0 80px #2196f3;
-    transition-delay: 1s;
+    color: #255884;
+    background: rgba(255, 209, 91, 0.842);
+    box-shadow: 0 0 20px rgb(255, 208, 91);
+    box-shadow: 0 0 40px rgb(255, 208, 90);
+    box-shadow: 0 0 80px rgb(255, 207, 91);
+    transition-delay: 0.3s;
 }
 .boutonAccueil a:hover span {
     position: absolute;
@@ -52,22 +73,123 @@
     left: -50%;
     width: 50%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #2196f3);
+    background: linear-gradient(90deg, transparent, rgba(255, 209, 91, 0.842));
 }
 .boutonAccueil a:hover span:nth-child(1) {
-    left: 50%;
-    transition: 1s;
+    left: 45%;
+    transition: 0.5s;
 }
 .boutonAccueil a span:nth-child(3) {
     bottom: 0;
     right: -50%;
     width: 50%;
     height: 2px;
-    background: linear-gradient(270deg, transparent, #2196f3);
+    background: linear-gradient(270deg, transparent, rgba(255, 209, 91, 0.842));
 }
 .boutonAccueil a:hover span:nth-child(3) {
-    right: 50%;
-    transition: 1s;
+    right:45%;
+    transition: 0.5s;
+}
+.boutonAccueil a span:nth-child(2) {
+    top: -50%;
+    right: 0;
+    width: 2px;
+    height: 50%;
+    background: linear-gradient(180deg, transparent, rgba(255, 209, 91, 0.842));
+}
+.boutonAccueil a:hover span:nth-child(2) {
+    top: 45%;
+    transition: 0.5s;
+}
+.boutonAccueil a span:nth-child(4) {
+    bottom: -50%;
+    left: 0;
+    width: 2px;
+    height: 50%;
+    background: linear-gradient(360deg, transparent, rgba(255, 209, 91, 0.842));
+}
+.boutonAccueil a:hover span:nth-child(4) {
+    bottom: 45%;
+    border: 2px;
+    transition: 0.5s;
+}
+/*Bouton de navigation PagePerso*/
+.boutonPagePerso {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.boutonPagePerso a {
+    margin: 10px;
+    padding: 15px 30px;
+    color: rgb(255, 208, 91);
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.boutonPagePerso a:hover {
+    color: #255884;
+    background: rgba(255, 209, 91, 0.842);
+    box-shadow: 0 0 20px rgb(255, 208, 91);
+    box-shadow: 0 0 40px rgb(255, 208, 90);
+    box-shadow: 0 0 80px rgb(255, 207, 91);
+    transition-delay: 0.3s;
+}
+.boutonPagePerso a:hover span {
+    position: absolute;
+    display: block;
+}
+.boutonPagePerso a span:nth-child(1) {
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(255, 209, 91, 0.842));
+}
+.boutonPagePerso a:hover span:nth-child(1) {
+    left: 45%;
+    transition: 0.5s;
+}
+.boutonPagePerso a span:nth-child(3) {
+    bottom: 0;
+    right: -50%;
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, rgba(255, 209, 91, 0.842));
+}
+.boutonPagePerso a:hover span:nth-child(3) {
+    right:45%;
+    transition: 0.5s;
+}
+.boutonPagePerso a span:nth-child(2) {
+    top: -50%;
+    right: 0;
+    width: 2px;
+    height: 50%;
+    background: linear-gradient(180deg, transparent, rgba(255, 209, 91, 0.842));
+}
+.boutonPagePerso a:hover span:nth-child(2) {
+    top: 45%;
+    transition: 0.5s;
+}
+.boutonPagePerso a span:nth-child(4) {
+    bottom: -50%;
+    left: 0;
+    width: 2px;
+    height: 50%;
+    background: linear-gradient(360deg, transparent, rgba(255, 209, 91, 0.842));
+}
+.boutonPagePerso a:hover span:nth-child(4) {
+    bottom: 45%;
+    border: 2px;
+    transition: 0.5s;
 }
 
 
