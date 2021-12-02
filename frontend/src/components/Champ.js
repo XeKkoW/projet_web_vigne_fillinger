@@ -16,14 +16,14 @@ const Champ = (props) => {
 
 
 		if (level > 10) {
-			axios.get("https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-1af062fa-c4f4-4fc2-96ba-17e42970c4cd")
+			axios.get("https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-2e85ef4b-9e1b-4a6d-bd72-1fd397b5c47c")
 				.then((res) => {
 					setDataFree(res.data.freeChampionIds)
 
 				});
 		}
 		else if (level <= 10 && level > 0) {
-			axios.get("https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-1af062fa-c4f4-4fc2-96ba-17e42970c4cd")
+			axios.get("https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-2e85ef4b-9e1b-4a6d-bd72-1fd397b5c47c")
 				.then((res) => {
 					setDataFree(res.data.freeChampionIdsForNewPlayers)
 

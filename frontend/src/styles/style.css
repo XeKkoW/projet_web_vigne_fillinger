@@ -116,20 +116,79 @@ unoJeVlus5YljACU
     margin-bottom: 60px;
     box-shadow: 2px 5px 5px rgb(0, 0, 0);
 }
-/*image mastery*/
-.masteryIMG {
-    min-height: 120px;
-    min-width: 120px;
-    max-height: 120px;
-    max-width: 120px;
-    margin: auto;
-    margin-bottom: 60px;
-    box-shadow: 2px 5px 5px rgb(0, 0, 0);
+/*image mastery 1*/
+.masteryIMG1 {
+    background-image: url("../styles/img/mastery1.png");
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    
+    min-height: 100px;
+    min-width: 100px;
+    
+}
+/*image mastery 2*/
+.masteryIMG2 {
+    background-image: url("../styles/img/mastery2.png");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    
+    min-height: 80px;
+    min-width: 80px;
+    
+}
+/*image mastery 3*/
+.masteryIMG3 {
+    background-image: url("../styles/img/mastery3.png");
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    
+    min-height: 100px;
+    min-width: 100px;
+    
+}
+/*image mastery 4*/
+.masteryIMG4 {
+    background-image: url("../styles/img/mastery4.png");
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    
+    min-height: 100px;
+    min-width: 100px;
+    
+}
+/*image mastery 5*/
+.masteryIMG5 {
+    background-image: url("../styles/img/mastery5.png");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    
+    min-height: 80px;
+    min-width: 80px;
+    
+}
+/*image mastery 6*/
+.masteryIMG6 {
+    background-image: url("../styles/img/mastery6.png");
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    
+    min-height: 100px;
+    min-width: 100px;
+    
+}
+/*image mastery 7*/
+.masteryIMG7 {
+    background-image: url("../styles/img/mastery7.png");
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    
+    min-height: 100px;
+    min-width: 100px;
+    
 }
 /*LVL mastery*/
 .masteryLVL {
-    background-image: url("../styles/img/mastery1.png");
-    background-repeat: no-repeat;
+    
     min-width: 100%;
     min-height: 100%;
 }

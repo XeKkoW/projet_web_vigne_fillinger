@@ -1,10 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
 import champions from 'lol-champions'
+var level = 0
 
 const ShowMastery = (props) => {
 	const champion = props.champion;
-	var image = "";
 	var imageChamp = "";
 	var name = "";
 
@@ -33,7 +33,10 @@ const ShowMastery = (props) => {
 	}
 
 	const mastery = (props) => {
-		const level = props.level;
+		level = props;
+		console.log(level);
+	}
+	mastery(champion.championLevel)
 		if (level == 1) {
 			return (
 				<div>
@@ -45,7 +48,7 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG" src= "../src/styles/img/mastery1.png" alt="mastery"/>
+						<img className="masteryIMG1" src= "../src/styles/img/mastery1.png"/>
 						<h1 className="masteryLVL">{champion.championLevel}</h1>
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
 					</li>
@@ -63,7 +66,7 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG" src= "../src/styles/img/mastery2.png" alt="mastery"/>
+						<img className="masteryIMG2" src= "../src/styles/img/mastery2.png"/>
 						<h1 className="masteryLVL">{champion.championLevel}</h1>
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
 					</li>
@@ -81,7 +84,7 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG" src= "../src/styles/img/mastery3.png" alt="mastery"/>
+						<img className="masteryIMG3" src= "../src/styles/img/mastery3.png"/>
 						<h1 className="masteryLVL">{champion.championLevel}</h1>
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
 					</li>
@@ -99,7 +102,7 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG" src= "../src/styles/img/mastery4.png" alt="mastery"/>
+						<img className="masteryIMG4" src= "../src/styles/img/mastery4.png"/>
 						<h1 className="masteryLVL">{champion.championLevel}</h1>
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
 					</li>
@@ -117,7 +120,7 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG" src= "../src/styles/img/mastery5.png" alt="mastery"/>
+						<img className="masteryIMG5" src= "../src/styles/img/mastery5.png"/>
 						<h1 className="masteryLVL">{champion.championLevel}</h1>
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
 					</li>
@@ -135,7 +138,7 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG" src= "../src/styles/img/mastery6.png" alt="mastery"/>
+						<img className="masteryIMG6" src= "../src/styles/img/mastery6.png"/>
 						<h1 className="masteryLVL">{champion.championLevel}</h1>
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
 					</li>
@@ -153,14 +156,19 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG" src= "../src/styles/img/mastery7.png" alt="mastery"/>
+						<img className="masteryIMG7" src= "../src/styles/img/mastery7.png"/>
 						<h1 className="masteryLVL">{champion.championLevel}</h1>
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
 					</li>
 				</div>
 			);
 		}
-	}
+		else {
+			return (
+				<div></div>
+			);
+		}
+	
 	
 };
 
