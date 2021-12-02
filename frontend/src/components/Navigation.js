@@ -22,7 +22,7 @@ const Navigation = () => {
                 <span></span>
                 <span></span>
                 <span></span>
-                Page 2
+                Qui suis-je
             </NavLink>
             </div>
 		</div>
