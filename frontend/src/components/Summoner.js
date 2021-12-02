@@ -48,6 +48,7 @@ const Summoner = (props) => {
 			<h2 className="AffichageNom">- {data.name} -</h2>
 			<h2 className="affichageLVL"> {data.summonerLevel} </h2>
 
+			<Rank id={data.id} />
 			<Mastery id={data.id} />
 			<Champ level={data.summonerLevel} />
 
