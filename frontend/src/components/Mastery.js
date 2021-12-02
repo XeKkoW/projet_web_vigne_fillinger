@@ -7,13 +7,20 @@ import ShowMastery from './ShowMastery';
 
 
 const API_URL = "https://euw1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/"
-const API_KEY = "RGAPI-2e85ef4b-9e1b-4a6d-bd72-1fd397b5c47c"
+const API_KEY = "RGAPI-798ec2e5-62e2-42b8-b948-37b4bc57adf3"
 
 const Mastery = (props) => {
 	const summonerId = props.id
 	const [data, setData] = useState([]);
 	const [goodData, setGoodData] = useState([]);
-
+	const [dataGraph, setDataGraph] = useState([]);
+	var level1 = 0;
+	var level2 = 0;
+	var level3 = 0;
+	var level4 = 0;
+	var level5 = 0;
+	var level6 = 0;
+	var level7 = 0;
 	data.length = 3;
 
 	useEffect(() => {
@@ -22,13 +29,9 @@ const Mastery = (props) => {
 
 				.then((res) => {
 					setData(res.data);
-
-
+					setDataGraph(res.data)
 				});
-
 		}
-
-
 	}, [summonerId]);
 
 
