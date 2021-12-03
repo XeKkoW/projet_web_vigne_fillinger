@@ -1,3 +1,14 @@
+/*
+PRESENTATION:
+prototype du site
+vendre notre site
+storybook
+parler de nos problèmes (fork depuis le git du rof; pc alex qui déconne;..)
+demonstration
+*/
+
+
+
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 
 
@@ -33,10 +44,13 @@
     text-decoration: none;
     text-shadow: 0px 7px 7px rgb(0, 0, 0);
 }
+.navigation a:hover {
+    text-shadow: none;
+}
 /*Pour agir sur le lien de la page sur laquelle on est*/
 .nav-active{
     font-weight: bold;
-    text-shadow: 0px 9px 9px rgb(0, 0, 0);
+    text-shadow: 0px 12px 12px rgb(0, 0, 0);
 }
 /*Bouton de navigation accueil*/
 .boutonAccueil {
@@ -60,7 +74,7 @@
     transition: 0.3s;
 }
 .boutonAccueil a:hover {
-    color: #255884;
+    color: #144f83;
     background: rgba(255, 209, 91, 0.842);
     box-shadow: 0 0 20px rgb(255, 208, 91);
     box-shadow: 0 0 40px rgb(255, 208, 90);
@@ -138,7 +152,7 @@
     transition: 0.3s;
 }
 .boutonPagePerso a:hover {
-    color: #255884;
+    color: #144f83;
     background: rgba(255, 209, 91, 0.842);
     box-shadow: 0 0 20px rgb(255, 208, 91);
     box-shadow: 0 0 40px rgb(255, 208, 90);
@@ -231,12 +245,24 @@ source: https://codepen.io/natalia-reshetnikova
     text-align: center;
     width: 20%;
     cursor: pointer;
-    color: #FFF;
+    color:rgb(255, 195, 42);
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0) ;
     border: none;
     transition: all 0.5s;
     position: relative; 
     margin: 100px;
+    box-shadow: 0 0 10px rgb(255, 208, 91);
+  }
+  .boutonNomJoueur:hover {
+    transition: 0s;
+    line-height: 60px;
+    height: 60px;
+    text-align: center;
+    width: 24%;
+    color:rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(255, 209, 91, 0);
   }
   .boutonNomJoueur span {
     z-index: 2; 
@@ -272,12 +298,14 @@ source: https://codepen.io/natalia-reshetnikova
   .boutonNomJoueur:hover::before {
     transform: rotate(-45deg);
     border: 1px solid rgba(255, 255, 255, 0.534);
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255, 253, 157, 0.479);
+    box-shadow: 0 0 10px rgb(255, 253, 157);
   }
   .boutonNomJoueur:hover::after {
     transform: rotate(45deg);
     border: 1px solid rgba(255, 255, 255, 0.534);
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255, 253, 157, 0.479);
+    box-shadow: 0 0 10px rgb(255, 253, 157);
   }
 /*
 test d'une personne lvl1:
@@ -326,6 +354,15 @@ unoJeVlus5YljACU
     margin-bottom: 60px;
     box-shadow: 2px 5px 5px rgb(0, 0, 0);
 }
+/*points de mastery*/
+.masteryPTS {
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
+    color: rgb(255, 208, 91);
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
 /*image mastery 1*/
 .masteryIMG1 {
     background-image: url("../styles/img/mastery1.png");
@@ -334,8 +371,10 @@ unoJeVlus5YljACU
     
     min-height: 70px;
     min-width: 70px;
+    max-height: 70px;
+    max-width: 70px;
 
-    margin: 15px;
+    margin-left: 30px;
     
 }
 /*image mastery 2*/
@@ -346,8 +385,10 @@ unoJeVlus5YljACU
     
     min-height: 70px;
     min-width: 70px;
+    max-height: 70px;
+    max-width: 70px;
 
-    margin: 15px;
+    margin-left: 30px;
     
 }
 /*image mastery 3*/
@@ -358,8 +399,10 @@ unoJeVlus5YljACU
     
     min-height: 70px;
     min-width: 70px;
+    max-height: 70px;
+    max-width: 70px;
 
-    margin: 15px;
+    margin-left: 30px;
     
 }
 /*image mastery 4*/
@@ -370,9 +413,10 @@ unoJeVlus5YljACU
     
     min-height: 80px;
     min-width: 80px;
+    max-height: 80px;
+    max-width: 80px;
 
-    margin: 10px;
-    
+    margin-left: 20px;
 }
 /*image mastery 5*/
 .masteryIMG5 {
@@ -382,8 +426,10 @@ unoJeVlus5YljACU
     
     min-height: 80px;
     min-width: 80px;
+    max-height: 80px;
+    max-width: 80px;
 
-    margin: 10px;    
+    margin-left: 20px;    
 }
 /*image mastery 6*/
 .masteryIMG6 {
@@ -393,8 +439,10 @@ unoJeVlus5YljACU
     
     min-height: 80px;
     min-width: 80px;
+    max-height: 80px;
+    max-width: 80px;
 
-    margin: 10px;
+    margin-left: 20px;
 }
 /*image mastery 7*/
 .masteryIMG7 {
@@ -404,19 +452,15 @@ unoJeVlus5YljACU
     
     min-height: 80px;
     min-width: 80px;
+    max-height: 80px;
+    max-width: 80px;
 
-    margin: 10px;
+    margin-left: 20px;
 }
-/*LVL mastery
-.masteryLVL {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    min-width: 100%;
-    min-height: 100%;
-}*/
-/*points de mastery*/
-.masteryPTS {
-    font-size: 15px;
+/**/
+.rankJoueur {
+    display: block;
+    font-size: 300%;
     font-weight: bold;
     text-shadow: 0px 7px 7px rgb(0, 0, 0);
     color: rgb(255, 208, 91);

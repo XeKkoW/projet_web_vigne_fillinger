@@ -48,8 +48,8 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG1" />
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
+						<div className="masteryIMG1" />
 					</li>
 				</div>
 			);
@@ -65,8 +65,8 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG2" />
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
+						<div className="masteryIMG2" />
 					</li>
 				</div>
 			);
@@ -82,8 +82,8 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG3" />
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
+						<div className="masteryIMG3" />
 					</li>
 				</div>
 			);
@@ -99,8 +99,9 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG4" />
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
+						<div className="masteryIMG4" />
+						
 					</li>
 				</div>
 			);
@@ -116,8 +117,9 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG5" />
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
+						<div className="masteryIMG5" />
+						
 					</li>
 				</div>
 			);
@@ -133,8 +135,8 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG6" />
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
+						<div className="masteryIMG6" />
 					</li>
 				</div>
 			);
@@ -150,8 +152,8 @@ const ShowMastery = (props) => {
 							images(champion.championId)
 						}
 						<img src={imageChamp} alt={name} />
-						<img className="masteryIMG7" />
 						<h2 className="masteryPTS">{champion.championPoints} pts </h2>
+						<div className="masteryIMG7" />
 					</li>
 				</div>
 			);

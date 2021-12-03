@@ -8,7 +8,7 @@ const ShowRank = (props) => {
 	if (rank != "" && tier != "") {
 		return (
 			<div>
-				<h1>Rank : {tier} {rank} </h1>
+				<h1 className="rankJoueur">Rank : {tier} {rank} </h1>
 			</div>
 		);
 	}
