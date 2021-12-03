@@ -7,7 +7,7 @@ import '../styles/style.css';
 import Rank from './Rank';
 
 const API_URL = "https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/";
-const API_KEY = "RGAPI-2e85ef4b-9e1b-4a6d-bd72-1fd397b5c47c";
+const API_KEY = "RGAPI-798ec2e5-62e2-42b8-b948-37b4bc57adf3";
 
 const Summoner = (props) => {
 
@@ -40,11 +40,9 @@ const Summoner = (props) => {
 
 	return (
 		<div>
-
 			<button className="boutonNomJoueur" onClick={playOk}>
-				ENTRER
+				<span></span>
 			</button>
-			
 			<h2 className="affichageNom">- {data.name} -</h2>
 			<h2 className="affichageLVL"> {data.summonerLevel} </h2>
 
