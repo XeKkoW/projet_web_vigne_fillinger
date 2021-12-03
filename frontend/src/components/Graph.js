@@ -57,11 +57,13 @@ const Graph = (props) => {
 					
 				))}
 				
-				<MasterGraph Graph={Graph}/>
+				
 				{console.log(graph)}
 
 
 			</ul>
+
+			<MasterGraph Graph={Graph}/>
 
 		</div>
 	);
