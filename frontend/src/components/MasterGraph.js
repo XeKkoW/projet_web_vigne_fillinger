@@ -69,7 +69,7 @@ const MasterGraph = (props) => {
         return (
         
             <div className="graphMastery">
-                {console.log(graph)}
+               
                 <ResponsiveContainer width="100%" aspect={3}>
                     <BarChart
                     width={500}
