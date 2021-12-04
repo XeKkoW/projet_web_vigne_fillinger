@@ -12,7 +12,7 @@ const ChampionsModel = mongoose.model(
 			require: true
 		}
 	},
-	"testus"
+	"champtests"
 );
 
 module.exports = { ChampionsModel };
