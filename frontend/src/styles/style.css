@@ -210,6 +210,39 @@ demonstration
 }
 
 
+/*Page d'Accueil*/
+
+
+.page2 {
+    background-image: URL("../styles/img/backgroundPage2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    /*size: 1920px, 1080px;*/
+    position: absolute;
+    /* cursor: pointer;*/  
+    text-align: center;
+}
+.supportPage2 {
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: rgba(202, 202, 202, 0.315);
+    box-shadow: 0px 5px 10px #cfcfcf;
+    border-radius: 5px;
+    min-height: 500px;
+}
+.titrePageDAccueil {
+    font-size: 300%;
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(206, 206, 206);
+    letter-spacing: 2px;
+    color: rgb(255, 220, 133);
+    margin-top: 50px;
+    padding-top: 80px;
+}
+
 
 /*Page Perso*/
 
@@ -320,8 +353,18 @@ unoJeVlus5YljACU
     min-width: 180px;
     margin: 20px;
     border: none;
-    background-color: rgba(255, 255, 255, 0.637);
+    background-color: rgba(255, 255, 255, 0.562);
     border-radius: 5px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.inputNomJoueur:hover {
+    min-height: 45px;
+    min-width: 270px;
+    background-color: rgba(254, 255, 203, 0.438);
+    font-size: 30px;
+    transition-delay: 2s;
+    transition: 0.5s;
 }
 /*nom joueur*/
 .affichageNom{
@@ -503,8 +546,8 @@ unoJeVlus5YljACU
     display: block;
     font-size: 25px;
     border-radius: 10px;
-    background-color: rgba(221, 220, 141, 0.329);
-    box-shadow: 0 0 20px rgba(250, 247, 99, 0.678);
+    background-color: rgba(255, 255, 255, 0.329);
+    box-shadow: 0 0 20px rgba(255, 255, 241, 0.911);
 }
 
 /*icon champions gratuits*/
@@ -550,25 +593,3 @@ unoJeVlus5YljACU
 }
 
 
-/*Page d'Accueil*/
-
-
-.page2 {
-    background-image: URL("../styles/img/backgroundPage2.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    min-width: 100%;
-    min-height: 100%;
-    /*size: 1920px, 1080px;*/
-    position: absolute;
-    /* cursor: pointer;*/  
-    text-align: center;
-}
-.supportPage2 {
-    margin-top: 2%;
-    margin-left: 8%;
-    margin-right: 8%;
-    background-color: rgba(202, 202, 202, 0.281);
-    box-shadow: 0px 5px 10px #000000;
-    border-radius: 5px;
-}
