@@ -14,8 +14,11 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
 	const newRecord = new ChampionsModel({
-		author: req.body.author,
-		message: req.body.message
+		key: req.body.key,
+		name: req.body.name,
+		title: req.body.title,
+		image: req.body.image,
+		role: req.body.role
 	})
 	newRecord.save((err, docs) => {
 		if (!err) res.send(docs);
@@ -28,8 +31,11 @@ router.put("/:id", (req, res) => {
 	if (!ObjectID.isValid(req.params.id))
 		return res.status(400).send("ID unknow : " + req.params.id)
 	const updateRecord = {
-		author: req.body.author,
-		message: req.body.message
+		key: req.body.key,
+		name: req.body.name,
+		title: req.body.title,
+		image: req.body.title,
+		role: req.body.role
 	};
 	ChampionsModel.findByIdAndUpdate(
 		req.params.id,

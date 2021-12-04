@@ -5,7 +5,7 @@ import ShowRank from './ShowRank';
 
 
 const API_URL = "https://euw1.api.riotgames.com/lol/league/v4/entries/by-summoner/"
-const API_KEY = "RGAPI-798ec2e5-62e2-42b8-b948-37b4bc57adf3"
+const API_KEY = "RGAPI-c9c4411a-1996-4409-b41c-43b86b9b1ef8"
 //u2ZlGjTZuprsS0Eo7MV7IiO2awvsM5iaXuJVlT-ZMWuQ9hM 
 
 const Rank = (props) => {

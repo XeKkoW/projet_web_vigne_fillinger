@@ -4,6 +4,7 @@ import PagePerso from './pages/PagePerso';
 import NotFound from './pages/NotFound';
 import Accueil from './pages/Accueil';
 import '../src/styles/style.css';
+import Admin from './pages/Admin';
 
 
 
@@ -14,6 +15,7 @@ function App() {
         <Switch>
           <Route path="/pagePerso" exact component={PagePerso} />
           <Route path="/" exact component={Accueil} />
+          <Route path="/admin" exact component={Admin} />
 
           <Route component={NotFound} />
 
