@@ -63,7 +63,7 @@ const Graph = (props) => {
 
 			</ul>
 
-			<MasterGraph Graph={Graph}/>
+			<MasterGraph graph={graph}/>
 
 		</div>
 	);

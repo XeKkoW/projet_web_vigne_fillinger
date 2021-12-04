@@ -474,25 +474,28 @@ unoJeVlus5YljACU
     margin: 100px;
     margin-bottom: 0px;
     font-weight: bold;
-}
-.graphMastery:hover {
-    margin: 90px;
     transition: 0.5s;
-}
-.recharts-surface {
     border-radius: 5px;
     background-color: rgba(255, 209, 91, 0.267);
     box-shadow: 0 0 40px rgb(255, 209, 91);
     padding: 20px;
+
+}
+.graphMastery:hover {
+    margin: 80px;
+    transition: 0.5s;
 }
 .recharts-wrapper {
-    color: rgb(238, 178, 27);
+    color: rgb(66, 48, 0);
+}
+.xAxis {
+    display: none;
 }
 
+/*icon champions gratuits*/
 .champ {
     padding-top: 50px;
 }
-/*descrptions titre icon champions gratuits*/
 .descListe {
     color: rgb(255, 220, 133);
     font-weight: bold;

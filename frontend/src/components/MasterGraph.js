@@ -1,41 +1,62 @@
+/*
+Source d'inspiration: https://recharts.org/en-US/examples/
+*/
+
+
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import Graph from './Graph';
 
-const data = [
-  {
-    name: 'Maitrise 7',
-    Champions: 4000,
-  },
-  {
-    name: 'Maitrise 6',
-    Champions: 3000,
-  },
-  {
-    name: 'Maitrise 5',
-    Champions: 2000,
-  },
-  {
-    name: 'Maitrise 4',
-    Champions: 2780,
-  },
-  {
-    name: 'Maitrise 3',
-    Champions: 1890,
-  },
-  {
-    name: 'Maitrise 2',
-    Champions: 2390,
-  },
-  {
-    name: 'Maitrise 1',
-    Champions: 3490,
-  },
-];
 
-function MasterGraph() {
+const MasterGraph = (props) => {
+
+    const graph = props.graph;
+
+    const data = [
+        {
+          name: 'Maitrise 7',
+          Champions: graph[6],
+        },
+        {
+          name: 'Maitrise 6',
+          Champions: graph[5],
+        },
+        {
+          name: 'Maitrise 5',
+          Champions: graph[4],
+        },
+        {
+          name: 'Maitrise 4',
+          Champions: graph[3],
+        },
+        {
+          name: 'Maitrise 3',
+          Champions: graph[2],
+        },
+        {
+          name: 'Maitrise 2',
+          Champions: graph[1],
+        },
+        {
+          name: 'Maitrise 1',
+          Champions: graph[0],
+        },
+      ];
+
+      const CustomTooltip = ({ active, payload, label }) => {
+        if (active && payload && payload.length) {
+          return (
+            <div className="custom-tooltip">
+              <p className="label">{`${label} : ${payload[0].value}`}</p>
+            </div>
+          );
+        }
+      
+        return null;
+      };
 
     return (
+        
             <div className="graphMastery">
+                {console.log(graph)}
                 <ResponsiveContainer width="100%" aspect={3}>
                     <BarChart
                     width={500}
@@ -47,8 +68,9 @@ function MasterGraph() {
                         left: 20,
                         bottom: 5,
                     }}>
-                        <Tooltip dataKey="name" />
-                        <Bar dataKey="Champions" fill="#82ca9d" />
+                        <XAxis dataKey="name" />
+                        <Tooltip content={<CustomTooltip />} />
+                        <Bar dataKey="Champions" fill="#e7e6b1e3" />
                     </BarChart>
                 </ResponsiveContainer>
             </div>
