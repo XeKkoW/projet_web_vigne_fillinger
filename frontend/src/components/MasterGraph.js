@@ -53,7 +53,11 @@ const MasterGraph = (props) => {
         return null;
       };
 
-    return (
+      const tableauTest = [0, 0, 0, 0, 0, 0, 0];
+
+    if(tableauTest[6] != graph[6])
+    {
+        return (
         
             <div className="graphMastery">
                 {console.log(graph)}
@@ -75,5 +79,14 @@ const MasterGraph = (props) => {
                 </ResponsiveContainer>
             </div>
     );
+    }
+    else
+    {
+        return (
+            <div></div>
+        );
+    }
+    
+
 }
 export default MasterGraph;
