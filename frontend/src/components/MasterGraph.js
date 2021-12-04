@@ -52,10 +52,19 @@ const MasterGraph = (props) => {
       
         return null;
       };
+     
+      const testGraph= () => {
+        var test = false;
+         graph.map((element)=> {
+  if(element!=0) test = true
+         }) 
+           
+         
+         return test;
+      }
 
-      const tableauTest = [0, 0, 0, 0, 0, 0, 0];
 
-    if(tableauTest[6] != graph[6])
+    if(testGraph())
     {
         return (
         
