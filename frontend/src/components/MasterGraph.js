@@ -45,7 +45,7 @@ const MasterGraph = (props) => {
         if (active && payload && payload.length) {
           return (
             <div className="custom-tooltip">
-              <p className="label">{`${label} : ${payload[0].value}`}</p>
+              <p className="label">- {`${label}: ${payload[0].value}`} Champions -</p>
             </div>
           );
         }
@@ -69,16 +69,17 @@ const MasterGraph = (props) => {
         return (
         
             <div className="graphMastery">
-               
+               <p> Nombre de Maitrises par champion </p>
                 <ResponsiveContainer width="100%" aspect={3}>
+                    
                     <BarChart
-                    width={500}
-                    height={300}
+                    width={350}
+                    height={200}
                     data={data}
                     margin={{
                         top: 5,
                         right: 30,
-                        left: 20,
+                        left: 30,
                         bottom: 5,
                     }}>
                         <XAxis dataKey="name" />

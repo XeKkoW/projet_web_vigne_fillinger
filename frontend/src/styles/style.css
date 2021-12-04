@@ -474,27 +474,37 @@ unoJeVlus5YljACU
 
 
 .graphMastery {
-    margin: 100px;
+    margin: 200px;
     margin-bottom: 0px;
     font-weight: bold;
     transition: 0.5s;
     border-radius: 5px;
-    background-color: rgba(255, 209, 91, 0.267);
-    box-shadow: 0 0 40px rgb(255, 209, 91);
+    background-color: rgba(255, 209, 91, 0.164);
+    box-shadow: 0 0 40px rgba(255, 209, 91, 0.801);
     padding: 20px;
 
 }
 .graphMastery:hover {
-    margin: 80px;
+    margin: 160px;
     margin-bottom: 0px;
-    margin-top: 100px;
+    margin-top: 200px;
     transition: 0.5s;
 }
-.recharts-wrapper {
-    color: rgb(66, 48, 0);
+.graphMastery p {
+    color: rgb(255, 195, 42);
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0px 5px 5px rgb(0, 0, 0);
 }
 .xAxis {
     display: none;
+}
+.custom-tooltip {
+    display: block;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: rgba(221, 220, 141, 0.329);
+    box-shadow: 0 0 20px rgba(250, 247, 99, 0.678);
 }
 
 /*icon champions gratuits*/
