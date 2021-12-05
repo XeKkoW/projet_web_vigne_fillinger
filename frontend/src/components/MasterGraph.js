@@ -73,13 +73,11 @@ const MasterGraph = (props) => {
                 <ResponsiveContainer width="100%" aspect={3}>
                     
                     <BarChart
-                    width={350}
-                    height={200}
                     data={data}
                     margin={{
                         top: 5,
-                        right: 30,
-                        left: 30,
+                        right: 60,
+                        left: 60,
                         bottom: 5,
                     }}>
                         <XAxis dataKey="name" />

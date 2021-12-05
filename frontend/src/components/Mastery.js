@@ -7,7 +7,7 @@ import ShowMastery from './ShowMastery';
 
 
 const API_URL = "https://euw1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/"
-const API_KEY = "RGAPI-c9c4411a-1996-4409-b41c-43b86b9b1ef8"
+const API_KEY = "RGAPI-dc2b4b4b-2124-445b-8588-f9db90676b76"
 
 const Mastery = (props) => {
 	const summonerId = props.id

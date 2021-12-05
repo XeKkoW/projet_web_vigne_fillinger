@@ -4,7 +4,7 @@ import FreeChamp from './FreeChamp';
 import '../styles/style.css';
 
 const API_URL = "https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key="
-const API_KEY = "RGAPI-c9c4411a-1996-4409-b41c-43b86b9b1ef8"
+const API_KEY = "RGAPI-dc2b4b4b-2124-445b-8588-f9db90676b76"
 
 
 const Champ = (props) => {
