@@ -16,13 +16,22 @@ const Navigation = () => {
                 Accueil
             </NavLink>
             </div>
-            <div className="boutonPagePerso">
+            <div className="boutonAccueil">
             <NavLink exact to="/pagePerso" activeClassName="nav-active">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                  Mon Aventure
+            </NavLink>
+            </div>
+            <div className="boutonAccueil">
+            <NavLink exact to="/media" activeClassName="nav-active">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                 Mes Médias
             </NavLink>
             </div>
         </div>

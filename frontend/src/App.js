@@ -18,7 +18,7 @@ function App() {
           <Route path="/pagePerso" exact component={PagePerso} />
           <Route path="/" exact component={Accueil} />
           <Route path="/admin" exact component={Admin} />
-          <Route path="/video" exact component={Youtube} />
+          <Route path="/media" exact component={Youtube} />
 
 
           <Route component={NotFound} />

@@ -7,7 +7,7 @@ const cors = require('cors');
 app.use(bodyParser.json());
 
 const corsOption = {
-	origin: "http://localhost:3001",
+	origin: "http://localhost:3000",
 	credentials: true,
 	'allowedHeaders': ['sessionId', 'Content-Type'],
 	'exploseHeaders': ['sessionId'],

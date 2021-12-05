@@ -1,5 +1,4 @@
 import React from 'react';
-import Youtube from './Youtube';
 
 const DisplayYoutube = (props) => {
 	const title = props.title
@@ -9,7 +8,7 @@ const DisplayYoutube = (props) => {
 
 
 	return (
-		<div>
+		<div className="miniatureVideo">
 			<ul>
 				<li>
 					<a href={`https://www.youtube.com/watch?v=${resourceId.videoId}`} target="_blank">
@@ -17,7 +16,6 @@ const DisplayYoutube = (props) => {
 							<img width={medium.width} height={medium.height} src={medium.url} alt="image vidéo" />
 
 						</p>
-						<h3>{title}</h3>
 					</a>
 				</li>
 			</ul>
@@ -25,5 +23,6 @@ const DisplayYoutube = (props) => {
 		</div>
 	);
 };
-
+//liens des vidéos
+//<h3>{title}</h3>
 export default DisplayYoutube;
