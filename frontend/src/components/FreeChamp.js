@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import champions from 'lol-champions'
 import { useEffect } from 'react/cjs/react.development';
 import '../styles/style.css';
@@ -10,6 +10,20 @@ const FreeChamp = (props) => {
 	var image = "";
 
 
+	const [data, setData] = useState([])
+	var play = true
+
+	useEffect(() => {
+
+		if (play) {
+			fetch('http://localhost:5500/champions')
+				.then(res => res.json())
+				.then((res) => {
+					setData(res)
+					play = false
+				})
+		}
+	}, [play])
 
 
 
@@ -19,12 +33,19 @@ const FreeChamp = (props) => {
 		const id = props
 		//	console.log(id);
 
-		champions.forEach((el) => {
+		data.map((el) => {
 			if (el.key == id) {
 				name = el.name
 
 			}
 		})
+
+		/*champions.forEach((el) => {
+			if (el.key == id) {
+				name = el.name
+
+			}
+		})*/
 	}
 	const ifName = () => {
 		if (name == "") {
@@ -37,8 +58,13 @@ const FreeChamp = (props) => {
 		//console.log(id);
 
 
+		data.map((el) => {
+			if (el.key == id) {
+				image = el.image
 
-		champions.forEach((el) => {
+			}
+		})
+		/*champions.forEach((el) => {
 			if (el.key == id) {
 				image = el.icon
 				//console.log(image);
@@ -46,7 +72,7 @@ const FreeChamp = (props) => {
 
 
 			}
-		})
+		})*/
 	}
 
 	images(champion)

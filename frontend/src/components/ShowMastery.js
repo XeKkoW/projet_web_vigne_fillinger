@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import champions from 'lol-champions'
 var level = 0
 
@@ -8,18 +8,34 @@ const ShowMastery = (props) => {
 	var imageChamp = "";
 	var name = "";
 
+	const [data, setData] = useState([])
+	var play = true
+
+	useEffect(() => {
+
+		if (play) {
+			fetch('http://localhost:5500/champions')
+				.then(res => res.json())
+				.then((res) => {
+					setData(res)
+					play = false
+				})
+		}
+	}, [play])
+
 	const images = (props) => {
 		const id = props
-		champions.forEach((el) => {
+		data.map((el) => {
 			if (el.key == id) {
-				imageChamp = el.icon
+				imageChamp = el.image
+
 			}
 		})
 	}
 
 	const goodId = (props) => {
 		const id = props
-		champions.forEach((el) => {
+		data.map((el) => {
 			if (el.key == id) {
 				name = el.name
 

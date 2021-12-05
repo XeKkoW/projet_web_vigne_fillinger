@@ -2,7 +2,6 @@ import axios from 'axios';
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import champions from 'lol-champions'
 import ShowMastery from './ShowMastery';
 
 
