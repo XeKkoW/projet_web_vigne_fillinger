@@ -33,12 +33,11 @@ demonstration
     margin: 20px;
     margin-top: 0px;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.281);
+    background-color: rgba(92, 92, 92, 0.281);
     border-radius: 5px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    box-shadow: 0px 5px 10px #000000;
-    
+    box-shadow: 0px 5px 10px #6e6e6e;
 }
 .navigation a {
     text-decoration: none;
@@ -213,6 +212,7 @@ demonstration
 /*Page d'Accueil*/
 
 
+/*Originellement la page 2*/
 .page2 {
     background-image: URL("../styles/img/backgroundPage2.jpg");
     background-attachment: fixed;
@@ -228,7 +228,7 @@ demonstration
     margin-top: 2%;
     margin-left: 8%;
     margin-right: 8%;
-    background-color: rgba(202, 202, 202, 0.315);
+    background-color: rgba(129, 129, 129, 0.315);
     box-shadow: 0px 5px 10px #cfcfcf;
     border-radius: 5px;
     min-height: 500px;
@@ -236,11 +236,62 @@ demonstration
 .titrePageDAccueil {
     font-size: 300%;
     font-weight: bold;
-    text-shadow: 0px 7px 7px rgb(206, 206, 206);
+    text-shadow: 2px 3px 3px rgb(206, 206, 206);
     letter-spacing: 2px;
     color: rgb(255, 220, 133);
     margin-top: 50px;
     padding-top: 80px;
+}
+/*affichage champ apres input*/
+.nomChampSelect {
+    font-size: 600%;
+    font-weight: bold;
+    text-shadow: 2px 3px 3px rgb(206, 206, 206);
+    margin-top: -50px;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+    color: rgb(255, 179, 66);
+}
+.titleChampSelect {
+    font-size: 400%;
+    font-weight: bold;
+    text-shadow: 2px 3px 3px rgb(206, 206, 206);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+    color: rgb(255, 220, 133);
+}
+.imgChampSelect {
+    min-height: 200px;
+}
+/*rangement icon champions*/
+.allChampList {
+    display: grid;
+    /*grid-template-columns: 25% 25% 25% 25%;*/
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    margin: 0px;
+    padding: 0px;
+}
+.allChampList ul {
+    padding-left: 0px;
+}
+/*icon champions*/
+.iconAllChamp {
+    list-style-type: none;
+    min-height: 120px;
+    min-width: 120px;
+    max-height: 120px;
+    max-width: 120px;
+    margin: auto;
+    margin-bottom: 60px;
+    box-shadow: 2px 7px 7px rgb(139, 139, 139);
+}
+/*nom icon champions*/
+.nameAllChamp {
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
+    color: rgb(255, 208, 91);
 }
 
 
@@ -287,7 +338,8 @@ source: https://codepen.io/natalia-reshetnikova
     border: none;
     transition: all 0.5s;
     position: relative; 
-    margin: 100px;
+    margin: 50px;
+    margin-bottom: 100px;
     box-shadow: 0 0 10px rgb(255, 208, 91);
   }
   .boutonNomJoueur:hover {
@@ -332,13 +384,13 @@ source: https://codepen.io/natalia-reshetnikova
     background-color: rgba(255, 209, 91, 0.144);
   }
   .boutonNomJoueur:hover::before {
-    transform: rotate(-45deg);
+    transform: rotate(-12deg);
     border: 1px solid rgba(255, 255, 255, 0.534);
     background-color: rgba(255, 253, 157, 0.479);
     box-shadow: 0 0 10px rgb(255, 253, 157);
   }
   .boutonNomJoueur:hover::after {
-    transform: rotate(45deg);
+    transform: rotate(12deg);
     border: 1px solid rgba(255, 255, 255, 0.534);
     background-color: rgba(255, 253, 157, 0.479);
     box-shadow: 0 0 10px rgb(255, 253, 157);
@@ -587,9 +639,6 @@ unoJeVlus5YljACU
     text-shadow: 0px 7px 7px rgb(0, 0, 0);
     color: rgb(255, 208, 91);
 }
-/*faire disparaitre icon buggé pour champion manquant*/
-.invisibleChamp {
-    display: none;
-}
+
 
 

@@ -29,7 +29,7 @@ const ShowAllChampions = () => {
 	return (
 		<div>
 
-			<ul>
+			<ul className="allChampList">
 
 				{
 					data.map((champion) => (

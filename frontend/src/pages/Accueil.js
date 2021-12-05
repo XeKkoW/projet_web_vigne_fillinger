@@ -10,10 +10,8 @@ const Accueil = () => {
 		<div className="page2">
 			<Navigation />
 			<div className="supportPage2">
-
-				<h1>PAGE D'ACCUEIL</h1>
 				<ChoixChampion />
-			<ShowAllChampions />
+				<ShowAllChampions />
 			</div>
 			
 		</div>

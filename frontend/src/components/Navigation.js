@@ -6,9 +6,9 @@ import '../styles/style.css';
 const Navigation = () => {
 
 	return (
-		<div className="navigation">
+        <div className="navigation">
             <div className="boutonAccueil">
-			<NavLink exact to="/" activeClassName="nav-active"> 
+            <NavLink exact to="/" activeClassName="nav-active"> 
                 <span></span>
                 <span></span>
                 <span></span>
@@ -22,11 +22,10 @@ const Navigation = () => {
                 <span></span>
                 <span></span>
                 <span></span>
-                Mon Aventure
+                 Mon Aventure
             </NavLink>
             </div>
-		</div>
-
+        </div>
 	);
 };
 

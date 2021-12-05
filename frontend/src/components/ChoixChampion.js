@@ -17,8 +17,8 @@ class ChoixChampion extends Component {
 
 		const { name } = this.state;
 		return (
-			<div className="name">
-				<h1 className="titreInput">Choisi ton Champion</h1>
+			<div >
+				<h1 className="titrePageDAccueil">Où jouer ton Champion ?</h1>
 				<input
 					className="inputNomJoueur"
 					type="text"

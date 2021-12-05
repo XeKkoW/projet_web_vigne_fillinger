@@ -13,13 +13,6 @@ const Mastery = (props) => {
 	const [data, setData] = useState([]);
 	const [goodData, setGoodData] = useState([]);
 	const [dataGraph, setDataGraph] = useState([]);
-	/*var level1 = 0;
-	var level2 = 0;
-	var level3 = 0;
-	var level4 = 0;
-	var level5 = 0;
-	var level6 = 0;
-	var level7 = 0;*/
 
 	var graph = useState([])
 
@@ -42,7 +35,6 @@ const Mastery = (props) => {
 		const level = props
 		console.log(level);
 		graph[level - 1]++;
-		//console.log(graph[level - 1]);
 
 	}
 
@@ -83,41 +75,3 @@ const Mastery = (props) => {
 };
 
 export default Mastery;
-/*
-const compteur = (props) => {
-	const level = props
-	if (level == 1) {
-		level1++;
-	}
-	else if (level == 2) {
-		level2++;
-	}
-	else if (level == 3) {
-		level3++;
-	}
-	else if (level == 4) {
-		level4++;
-	}
-	else if (level == 5) {
-		level5++;
-	}
-	else if (level == 6) {
-		level6++;
-	}
-	else if (level == 7) {
-		level7++;
-	}
-
-}
-
-
-
-
-{graph.map((level) => (
-
-					//console.log(level)
-
-
-				))}
-
-*/

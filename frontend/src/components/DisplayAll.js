@@ -7,9 +7,9 @@ const DisplayAll = (props) => {
 	return (
 		<div>
 			<ul>
-				<li className="iconChamp">
+				<li className="iconAllChamp">
 					<img src={champion.image} alt={champion.name} />
-					<p className="nameChamp">~ {champion.name} ~</p>
+					<p className="nameAllChamp">~ {champion.name} ~</p>
 				</li>
 			</ul>
 		</div>

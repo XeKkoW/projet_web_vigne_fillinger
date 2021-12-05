@@ -26,9 +26,7 @@ const ButtonChoix = (props) => {
 
 	return (
 		<div>
-			<button className="boutonNomJoueur" onClick={playOk}>
-				ENTRER
-			</button>
+			<button className="boutonNomJoueur" onClick={playOk}></button>
 			{data.map((champion) => (
 				<DisplayOne name={name} champion={champion} />
 			))}
