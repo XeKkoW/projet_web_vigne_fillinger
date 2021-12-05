@@ -12,9 +12,10 @@ const Accueil = () => {
 			<div className="supportPage2">
 
 				<h1>PAGE D'ACCUEIL</h1>
-			</div>
-			<ChoixChampion />
+				<ChoixChampion />
 			<ShowAllChampions />
+			</div>
+			
 		</div>
 
 	);
