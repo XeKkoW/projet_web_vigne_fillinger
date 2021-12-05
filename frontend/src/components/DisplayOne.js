@@ -9,17 +9,21 @@ const DisplayOne = (props) => {
 
 	if (champion.name == name) {
 		return (
-			<div>
+			<div className="imgChampSelect">
 				<p className="nomChampSelect">{champion.name}</p>
 				<p className="titleChampSelect">{champion.title}</p>
-				<p>
-				<img src={champion.image} className="imgChampSelect" />    
 				
-					{champion.role.map((role)=> (
-						<DisplayRole role={role} />
+				<div className="contenainerChampSelect">
 
-					))}
-				</p>
+				<img src={champion.image} className="imgChampSelect" />    
+				<div className="roleChampSelect">
+				{champion.role.map((role)=> (
+				<DisplayRole role={role} />
+				))} 
+				</div>
+
+				</div>
+
 				<br></br>
 				<br></br>
 				<br></br>

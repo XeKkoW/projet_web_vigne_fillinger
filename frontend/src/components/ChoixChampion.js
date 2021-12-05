@@ -26,14 +26,7 @@ class ChoixChampion extends Component {
 					value={name}
 					onChange={this.handleChange}
 				/>
-
-
-
-
 				<ButtonChoix name={name} />
-
-
-
 			</div>
 		);
 

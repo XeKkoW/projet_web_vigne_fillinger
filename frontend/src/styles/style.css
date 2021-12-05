@@ -261,8 +261,54 @@ demonstration
     letter-spacing: 2px;
     color: rgb(255, 220, 133);
 }
+.contenainerChampSelect {
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgb(206, 206, 206);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+    color: rgb(27, 36, 155);
+}
 .imgChampSelect {
+    margin-top: 30px;
+    margin-bottom: 30px;
     min-height: 200px;
+}
+.roleChampSelect {
+    background-image:radial-gradient(rgba(196, 196, 196, 0.356), transparent);
+    padding: 10px;
+}
+.roleChampSelect div {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+
+    margin-left: 45%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    min-height: 100px;
+    min-width: 100px;
+    max-height: 100px;
+    max-width: 100px;
+}
+.iconTop {
+    background-image: url("../styles/img/iconTop.png");
+}
+.iconJungler {
+    background-image: url("../styles/img/iconJungler.png");
+}
+.iconMid {
+    background-image: url("../styles/img/iconMid.png");
+}
+.iconBot {
+    background-image: url("../styles/img/iconBot.png");
+}
+.iconSupp {
+    background-image: url("../styles/img/iconSupp.png");
 }
 /*rangement icon champions*/
 .allChampList {
