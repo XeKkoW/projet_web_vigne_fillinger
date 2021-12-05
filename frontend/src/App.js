@@ -6,6 +6,7 @@ import Accueil from './pages/Accueil';
 import '../src/styles/style.css';
 import Admin from './pages/Admin';
 import DisplayOne from './components/DisplayOne';
+import Youtube from './pages/Youtube';
 
 
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/pagePerso" exact component={PagePerso} />
           <Route path="/" exact component={Accueil} />
           <Route path="/admin" exact component={Admin} />
+          <Route path="/video" exact component={Youtube} />
 
 
           <Route component={NotFound} />
