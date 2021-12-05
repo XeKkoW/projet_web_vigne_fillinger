@@ -28,7 +28,7 @@ const ShowAllChampions = () => {
 
 	return (
 		<div>
-
+			<p className="titleAllChampList">Tous les champions de League Of Legends</p>
 			<ul className="allChampList">
 
 				{

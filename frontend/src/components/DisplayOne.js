@@ -9,7 +9,7 @@ const DisplayOne = (props) => {
 
 	if (champion.name == name) {
 		return (
-			<div className="imgChampSelect">
+			<div>
 				<p className="nomChampSelect">{champion.name}</p>
 				<p className="titleChampSelect">{champion.title}</p>
 				
