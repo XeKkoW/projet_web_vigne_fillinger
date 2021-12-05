@@ -1,5 +1,5 @@
 import React from 'react';
-import ShowAllChampions from './ShowAllChampion';
+import DisplayRole from './DisplayRole';
 
 const DisplayOne = (props) => {
 	const name = props.name;
@@ -9,7 +9,13 @@ const DisplayOne = (props) => {
 		return (
 			<div>
 				<h1>{champion.name}</h1>
-				
+				{
+					champion.role.map((role) => (
+						<DisplayRole role={role} />
+					))
+				}
+
+
 			</div>
 		);
 	}
@@ -21,3 +27,4 @@ const DisplayOne = (props) => {
 };
 
 export default DisplayOne;
+

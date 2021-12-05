@@ -30,7 +30,8 @@ const ButtonChoix = (props) => {
 				ENTRER
 			</button>
 			{data.map((champion) => (
-				<DisplayOne name={name} champion={champion} />
+
+				< DisplayOne name={name} champion={champion} />
 			))}
 
 
