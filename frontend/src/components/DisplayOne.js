@@ -9,6 +9,7 @@ const DisplayOne = (props) => {
 		return (
 			<div>
 				<h1>{champion.name}</h1>
+				
 			</div>
 		);
 	}
