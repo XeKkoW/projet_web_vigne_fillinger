@@ -1,6 +1,7 @@
 import Navigation from '../components/Navigation';
 import React from 'react';
-import Test from '../Test';
+import ChoixChampion from '../components/ChoixChampion';
+import ShowAllChampions from '../components/ShowAllChampion';
 
 
 const Accueil = () => {
@@ -17,7 +18,8 @@ const Accueil = () => {
 
 				<h1>PAGE D'ACCUEIL</h1>
 			</div>
-			<Test />
+			<ChoixChampion />
+			<ShowAllChampions />
 		</div>
 
 	);

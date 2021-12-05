@@ -15,7 +15,7 @@ const corsOption = {
 	'preflightContinue': false
 }
 app.use(cors(corsOption));
-app.use('/champtests', championsRoutes);
+app.use('/champions', championsRoutes);
 
 
 app.listen(5500, () => console.log('Server started 5500'));

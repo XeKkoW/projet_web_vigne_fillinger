@@ -25,7 +25,7 @@ const ChampionsModel = mongoose.model(
 		}
 
 	},
-	"champtests"
+	"champions"
 );
 
 module.exports = { ChampionsModel };
