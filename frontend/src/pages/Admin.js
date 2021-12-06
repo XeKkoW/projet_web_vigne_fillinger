@@ -1,44 +1,49 @@
 import axios from 'axios';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import Ajout from '../Actions/Ajout';
+import Modification from '../Actions/Modification';
+import Suppression from '../Actions/Suppression';
 
 const Admin = () => {
-	const key = "321"
-	const name = "Bibou"
-	const title = "musclor"
-	const image = "mirroir.png"
-	const role = ["jungle", "mid"]
+
+
+	const [ajout, setAjout] = useState(true)
+	const [suppression, setSuppression] = useState(false)
+	const [updtate, setUpdate] = useState(false)
+
 
 	//const erreur = document.querySelector('.erreur.error')
-	useEffect(() => {
 
 
-		axios({
-			method: "post",
-			url: "http://localhost:5500/champtests",
-			withCredentials: true,
-			data: {
-				key,
-				name,
-				title,
-				image,
-				role,
-			}
-		})
-			.then((res) => {
-				if (res.data.errors) {
-					console.log("erreur");
-				}
-				else {
-					console.log("c'est bon");
-				}
-			})
-			.catch((err) => {
-				console.log("j'ai catch : john cena ");
-			})
-	})
+	const handleModals = (e) => {
+		if (e.target.id === "add") {
+			setAjout(true);
+			setSuppression(false);
+			setUpdate(false);
+		}
+		else if (e.target.id === "delete") {
+			setAjout(false);
+			setSuppression(true);
+			setUpdate(false);
+		}
+		else if (e.target.id === "update") {
+			setAjout(false);
+			setSuppression(false);
+			setUpdate(true);
+		}
+	}
 
 	return (
 		<div>
+			<ul>
+				<li onClick={handleModals} id="add"> Ajout </li>
+				<li onClick={handleModals} id="delete"> Supression </li>
+				<li onClick={handleModals} id="update"> Modification </li>
+			</ul>
+			{ajout && <Ajout />}
+			{suppression && <Suppression />}
+			{updtate && <Modification />}
+
 
 		</div>
 	);
