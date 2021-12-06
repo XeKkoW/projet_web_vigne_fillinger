@@ -9,7 +9,7 @@ import Graph from './Graph';
 import MasterGraph from './MasterGraph';
 
 const API_URL = "https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/";
-const API_KEY = "RGAPI-dc2b4b4b-2124-445b-8588-f9db90676b76";
+const API_KEY = "RGAPI-54d05f27-2315-47f0-89c8-69836942ef1f";
 
 //récupère les données d'un joueur d'une API à paritr d'un nom
 //transmet les bonnes données aux autres fonctions
