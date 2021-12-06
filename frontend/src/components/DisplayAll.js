@@ -4,6 +4,7 @@ import '../styles/style.css';
 const DisplayAll = (props) => {
 	const champion = props.champion;
 
+
 	return (
 		<div>
 			<ul>
