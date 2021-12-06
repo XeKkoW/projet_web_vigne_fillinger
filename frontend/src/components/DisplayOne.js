@@ -1,6 +1,5 @@
 import React from 'react';
-import DisplayRole from '../styles/DisplayRole';
-import ShowAllChampions from './ShowAllChampion';
+import DisplayRole from './DisplayRole';
 
 //affiche seulement le champion choisit dans ChoixChampion.js
 //affiche toute les information d'un champion

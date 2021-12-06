@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 //permet l'appel de l'API et la BDD dans le front
 const corsOption = {
-	origin: "http://localhost:3002",
+	origin: "http://localhost:3000",
 	credentials: true,
 	'allowedHeaders': ['sessionId', 'Content-Type'],
 	'exploseHeaders': ['sessionId'],

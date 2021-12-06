@@ -1,40 +1,53 @@
-import React from 'react';
-
-//Permet d'afficher l'image du role du champion en fonction de son role
+import React from "react";
 
 const DisplayRole = (props) => {
-	const role = props.role;
-	var image = ""
+    const role = props.role;
+    console.log(role)
 
-
-	const testRole = () => {
-		if (role.toString() === "Jungler") {
-			console.log("Goooooooooooo");
-			image = ""
+        
+        
+        if(role == "Jungler"){
+            return (
+                <div className="iconJungler">
+                Jungle
+                </div>
+            );
+        }
+        else if(role == "Top"){
+            return (
+                <div className="iconTop">
+                Top
+                </div>
+            );
+        }
+        else if(role == "Mid"){
+            return (
+                <div className="iconMid">
+                Mid
+                </div>
+            );
+        }
+        else if(role == "Bot"){
+            return (
+                <div className="iconBot">
+                Bot
+                </div>
+            );
+        }
+        else if(role == "Supp"){
+            return (
+                <div className="iconSupp">
+                Supp
+                </div>
+            );
+        }
+        else {
+			return (
+				<div></div>
+			);
 		}
-		else if (role == "Top") {
-			image = ""
-		}
-		else if (role == "Mid") {
-			image = ""
-		}
-		else if (role == "Bot") {
-			image = ""
-		}
-		else if (role == "Supp") {
-			image = ""
-		}
-		else {
-			image = "erreur"
-		}
-	}
-
-	testRole()
-	return (
-		<div>
-
-		</div>
-	);
+    
+  
+   
 };
-
 export default DisplayRole;
