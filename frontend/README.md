@@ -1,8 +1,8 @@
 Bonjour,
 Voici le Projet de Gabriel Vigne et Alexandre Fillinger ing4 Gr08
 
-Pour ce projet nous avons utiliser npm :
- "axios": "^0.24.0",
+Pour ce projet nous avons utilisé npm :
+"axios": "^0.24.0",
 "node-sass": "^4.14.1",
 "react": "^17.0.2",
 "react-dom": "^17.0.2",
@@ -12,11 +12,11 @@ Pour ce projet nous avons utiliser npm :
 "web-vitals": "^1.0.1"
 
 
-clé League of Lgends
+clé League of Legends
 https://developer.riotgames.com/ pour une clé API si vous voulez utiliser le projet.
 chaque clé est valide 24h
 
-Pour remplacer la clé il faut aller dans les fichier suivant :
+Pour remplacer la clé il faut aller dans les fichiers suivant :
 Champ
 Graph
 Mastery
@@ -30,6 +30,7 @@ L'API se nomme youtube data API V3
 nous ne savons pas quand la clé ne fonctionnera plus
 
 Pour la BDD vous pouvez nous demander un accès, il nous faudra simplement votre addresse IP
+(sans BDD vous n'aurez pas accès à certaines fonctionnalités et affichages)
 
 si vous avez des questions n'hésitez pas à nous contacter
 
