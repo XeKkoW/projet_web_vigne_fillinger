@@ -2,11 +2,14 @@ Bonjour,
 Voici le Projet de Gabriel Vigne et Alexandre Fillinger ing4 Gr08
 
 Pour ce projet nous avons utiliser npm :
-react-router-dom
-router-dom
-node-sass
-nodemon
-recharts
+ "axios": "^0.24.0",
+"node-sass": "^4.14.1",
+"react": "^17.0.2",
+"react-dom": "^17.0.2",
+"react-router-dom": "^5.2.0",
+"react-scripts": "4.0.3",
+"recharts": "^2.1.6",
+"web-vitals": "^1.0.1"
 
 
 clé League of Lgends
