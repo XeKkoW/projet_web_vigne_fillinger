@@ -7,11 +7,11 @@ const cors = require('cors');
 app.use(bodyParser.json());
 
 const corsOption = {
-	origin: "http://localhost:3001",
+	origin: "http://localhost:3002",
 	credentials: true,
 	'allowedHeaders': ['sessionId', 'Content-Type'],
 	'exploseHeaders': ['sessionId'],
-	'methods': 'GET,HEAD,PUT,PATCH,POST,DELET',
+	'methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
 	'preflightContinue': false
 }
 app.use(cors(corsOption));

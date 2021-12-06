@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const ObjectID = require('mongoose').Types.ObjectId
 
+
 const { ChampionsModel } = require('../models/championsModel');
 
 router.get('/', (req, res) => {
@@ -27,7 +28,7 @@ router.post('/', (req, res) => {
 })
 
 //apdate
-router.put("/:id", (req, res) => {
+router.put("/", (req, res) => {
 	if (!ObjectID.isValid(req.params.id))
 		return res.status(400).send("ID unknow : " + req.params.id)
 	const updateRecord = {
@@ -48,7 +49,7 @@ router.put("/:id", (req, res) => {
 	)
 })
 
-router.delete("/:id", (req, res) => {
+router.delete("/", (req, res) => {
 	if (!ObjectID.isValid(req.params.id))
 		return res.status(400).send("ID unknow : " + req.params.id)
 
