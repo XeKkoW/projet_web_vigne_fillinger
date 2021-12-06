@@ -1,0 +1,666 @@
+/*
+PRESENTATION:
+prototype du site
+vendre notre site
+storybook
+parler de nos problèmes (fork depuis le git du rof; pc alex qui déconne;..)
+demonstration
+*/
+
+
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+
+/*Background Général*/
+
+
+.fond {
+    background-image: url(https://nexus.leagueoflegends.com/wp-content/uploads/2019/09/WORLDS_Hero-Optimized_tet6rcp8js7lbk8ypf0d.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;  
+}
+
+
+/*Navigation*/
+
+
+.navigation {
+    margin: 20px;
+    margin-top: 0px;
+    display: flex;
+    background-color: rgba(92, 92, 92, 0.281);
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    box-shadow: 0px 5px 10px #6e6e6e;
+}
+.navigation a {
+    text-decoration: none;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
+}
+.navigation a:hover {
+    text-shadow: none;
+}
+/*Pour agir sur le lien de la page sur laquelle on est*/
+.nav-active{
+    font-weight: bold;
+    text-shadow: 0px 12px 12px rgb(0, 0, 0);
+}
+/*Bouton de navigation accueil*/
+.boutonAccueil {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.boutonAccueil a {
+    margin: 10px;
+    padding: 15px 30px;
+    color: rgb(255, 208, 91);
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.boutonAccueil a:hover {
+    color: #144f83;
+    background: rgba(255, 209, 91, 0.842);
+    box-shadow: 0 0 20px rgb(255, 208, 91);
+    box-shadow: 0 0 40px rgb(255, 208, 90);
+    box-shadow: 0 0 80px rgb(255, 207, 91);
+    transition-delay: 0.3s;
+}
+.boutonAccueil a:hover span {
+    position: absolute;
+    display: block;
+}
+.boutonAccueil a span:nth-child(1) {
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(255, 209, 91, 0.842));
+}
+.boutonAccueil a:hover span:nth-child(1) {
+    left: 45%;
+    transition: 0.5s;
+}
+.boutonAccueil a span:nth-child(3) {
+    bottom: 0;
+    right: -50%;
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, rgba(255, 209, 91, 0.842));
+}
+.boutonAccueil a:hover span:nth-child(3) {
+    right:45%;
+    transition: 0.5s;
+}
+.boutonAccueil a span:nth-child(2) {
+    top: -50%;
+    right: 0;
+    width: 2px;
+    height: 50%;
+    background: linear-gradient(180deg, transparent, rgba(255, 209, 91, 0.842));
+}
+.boutonAccueil a:hover span:nth-child(2) {
+    top: 45%;
+    transition: 0.5s;
+}
+.boutonAccueil a span:nth-child(4) {
+    bottom: -50%;
+    left: 0;
+    width: 2px;
+    height: 50%;
+    background: linear-gradient(360deg, transparent, rgba(255, 209, 91, 0.842));
+}
+.boutonAccueil a:hover span:nth-child(4) {
+    bottom: 45%;
+    border: 2px;
+    transition: 0.5s;
+}
+
+
+/*Page d'Accueil*/
+
+
+/*Originellement la page 2*/
+.page2 {
+    background-image: URL("../styles/img/backgroundPage2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    /*size: 1920px, 1080px;*/
+    position: absolute;
+    /* cursor: pointer;*/  
+    text-align: center;
+}
+.supportPage2 {
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: rgba(129, 129, 129, 0.315);
+    box-shadow: 0px 5px 10px #cfcfcf;
+    border-radius: 5px;
+    min-height: 500px;
+}
+.titrePageDAccueil {
+    font-size: 300%;
+    font-weight: bold;
+    text-shadow: 0 0 9px rgb(206, 206, 206);
+    letter-spacing: 2px;
+    color: rgb(255, 220, 133);
+    margin-top: 50px;
+    padding-top: 80px;
+}
+/*affichage champ apres input*/
+.nomChampSelect {
+    font-size: 600%;
+    font-weight: bold;
+    text-shadow: 0 0 9px rgb(206, 206, 206);
+    margin-top: -50px;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+    color: rgb(255, 179, 66);
+}
+.titleChampSelect {
+    font-size: 400%;
+    font-weight: bold;
+    text-shadow: 0 0 6px rgb(206, 206, 206);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+    color: rgb(255, 220, 133);
+}
+.contenainerChampSelect {
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgb(206, 206, 206);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+    color: rgb(27, 36, 155);
+}
+.imgChampSelect {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    min-width: 15%;
+    box-shadow: 0 0 35px rgb(0, 0, 0);
+}
+.roleChampSelect {
+    background-image:radial-gradient(rgba(196, 196, 196, 0.356), transparent);
+    padding: 10px;
+}
+.roleChampSelect div {
+    display: flex;
+    flex-flow: column;
+
+    margin-left: 45%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    min-height: 100px;
+    min-width: 100px;
+    max-height: 100px;
+    max-width: 100px;
+}
+.iconTop {
+    background-image: url("../styles/img/iconTop.png");
+}
+.iconJungler {
+    background-image: url("../styles/img/iconJungler.png");
+}
+.iconMid {
+    background-image: url("../styles/img/iconMid.png");
+}
+.iconBot {
+    background-image: url("../styles/img/iconBot.png");
+}
+.iconSupp {
+    background-image: url("../styles/img/iconSupp.png");
+}
+/*rangement icon champions*/
+.titleAllChampList {
+    font-size: 250%;
+    font-weight: bold;
+    text-shadow: 0px 0px 6px rgb(206, 206, 206);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+    color: rgb(255, 202, 70);
+}
+.allChampList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; 
+    margin: 0px;
+    padding: 70px;
+}
+.allChampList ul {
+    padding-left: 0px;
+}
+/*icon champions*/
+.iconAllChamp {
+    list-style-type: none;
+    min-height: 120px;
+    min-width: 120px;
+    max-height: 120px;
+    max-width: 120px;
+    margin: 20px;
+    margin-bottom: 60px;
+    box-shadow: 0 0 9px rgb(139, 139, 139);
+}
+/*nom icon champions*/
+.nameAllChamp {
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
+    color: rgb(255, 208, 91);
+}
+
+
+/*Page Perso*/
+
+
+.home {
+    text-align: center;
+}
+/*fond gris clair*/
+.name {
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: rgba(0, 0, 0, 0.281);
+    box-shadow: 0px 5px 10px #000000;
+    border-radius: 5px;
+}
+/*titre d'accueil*/
+.titreInput {
+    font-size: 300%;
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
+    letter-spacing: 2px;
+    color: rgb(255, 220, 133);
+    margin-top: 50px;
+    padding-top: 80px;
+}
+/*Bouton d'accès information perso*/
+/*
+source: https://codepen.io/natalia-reshetnikova
+*/
+.boutonNomJoueur {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 20%;
+    cursor: pointer;
+    color:rgb(255, 195, 42);
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
+    letter-spacing: 3px;
+    background-color: rgba(0, 0, 0, 0) ;
+    border: none;
+    transition: all 0.5s;
+    position: relative; 
+    margin: 50px;
+    margin-bottom: 100px;
+    box-shadow: 0 0 10px rgb(255, 208, 91);
+  }
+  .boutonNomJoueur:hover {
+    transition: 0s;
+    line-height: 60px;
+    height: 60px;
+    text-align: center;
+    letter-spacing: 0px;
+    width: 24%;
+    color:rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(255, 209, 91, 0);
+  }
+  .boutonNomJoueur span {
+    z-index: 2; 
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+  }
+  .boutonNomJoueur::before {
+    content: 'ENTREZ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.199);
+    background-color: rgba(255, 209, 91, 0.144);
+  }
+  .boutonNomJoueur::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.199);
+    background-color: rgba(255, 209, 91, 0.144);
+  }
+  .boutonNomJoueur:hover::before {
+    transform: rotate(-10deg);
+    border: 1px solid rgba(255, 255, 255, 0.534);
+    background-color: rgba(255, 253, 157, 0.479);
+    box-shadow: 0 0 10px rgb(255, 253, 157);
+  }
+  .boutonNomJoueur:hover::after {
+    transform: rotate(10deg);
+    border: 1px solid rgba(255, 255, 255, 0.534);
+    background-color: rgba(255, 253, 157, 0.479);
+    box-shadow: 0 0 10px rgb(255, 253, 157);
+  }
+/*
+test d'une personne lvl1:
+unoJeVlus5YljACU
+*/
+/*case de remplissage du nom*/
+.inputNomJoueur {
+    min-height: 30px;
+    min-width: 180px;
+    margin: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.562);
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.inputNomJoueur:hover {
+    min-height: 45px;
+    min-width: 270px;
+    background-color: rgba(254, 255, 203, 0.438);
+    font-size: 30px;
+    transition-delay: 2s;
+    transition: 0.5s;
+}
+/*nom joueur*/
+.affichageNom{
+    font-size: 300%;
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
+    color: rgb(255, 216, 190);
+}
+/*LVL joueur*/
+.affichageLVL {
+    display: block;
+    font-size: 300%;
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
+    color: rgb(255, 208, 91);
+}
+/*rangement icon champions mastery*/
+.mastery-List {
+    list-style-type: none;
+    display: grid;
+    /*grid-template-columns: 25% 25% 25% 25%;*/
+    grid-template-columns: 1fr 1fr 1fr; 
+    margin: 0px;
+    padding: 0px;
+}
+/*icon champions mastery*/
+.mastery-List li {
+    min-height: 120px;
+    min-width: 120px;
+    max-height: 120px;
+    max-width: 120px;
+    margin: auto;
+    margin-bottom: 60px;
+    box-shadow: 2px 5px 5px rgb(0, 0, 0);
+}
+/*points de mastery*/
+.masteryPTS {
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
+    color: rgb(255, 208, 91);
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+/*image mastery 1*/
+.masteryIMG1 {
+    background-image: url("../styles/img/mastery1.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    
+    min-height: 70px;
+    min-width: 70px;
+    max-height: 70px;
+    max-width: 70px;
+
+    margin-left: 30px;
+    
+}
+/*image mastery 2*/
+.masteryIMG2 {
+    background-image: url("../styles/img/mastery2.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    
+    min-height: 70px;
+    min-width: 70px;
+    max-height: 70px;
+    max-width: 70px;
+
+    margin-left: 30px;
+    
+}
+/*image mastery 3*/
+.masteryIMG3 {
+    background-image: url("../styles/img/mastery3.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    
+    min-height: 70px;
+    min-width: 70px;
+    max-height: 70px;
+    max-width: 70px;
+
+    margin-left: 30px;
+    
+}
+/*image mastery 4*/
+.masteryIMG4 {
+    background-image: url("../styles/img/mastery4.png");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    
+    min-height: 80px;
+    min-width: 80px;
+    max-height: 80px;
+    max-width: 80px;
+
+    margin-left: 20px;
+}
+/*image mastery 5*/
+.masteryIMG5 {
+    background-image: url("../styles/img/mastery5.png");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    
+    min-height: 80px;
+    min-width: 80px;
+    max-height: 80px;
+    max-width: 80px;
+
+    margin-left: 20px;    
+}
+/*image mastery 6*/
+.masteryIMG6 {
+    background-image: url("../styles/img/mastery6.png");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    
+    min-height: 80px;
+    min-width: 80px;
+    max-height: 80px;
+    max-width: 80px;
+
+    margin-left: 20px;
+}
+/*image mastery 7*/
+.masteryIMG7 {
+    background-image: url("../styles/img/mastery7.png");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    
+    min-height: 80px;
+    min-width: 80px;
+    max-height: 80px;
+    max-width: 80px;
+
+    margin-left: 20px;
+}
+/*affichage du rang competitif*/
+.rankJoueur {
+    display: block;
+    font-size: 300%;
+    font-weight: bold;
+    text-shadow: 0px 7px 7px rgb(0, 0, 0);
+    color: rgb(255, 208, 91);
+}
+
+
+/*graphique masteries*/
+
+
+.graphMastery {
+    margin: 200px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 5px;
+    background-color: rgba(255, 209, 91, 0.164);
+    box-shadow: 0 0 40px rgba(255, 209, 91, 0.801);
+    padding: 20px;
+
+}
+.graphMastery:hover {
+    margin: 160px;
+    margin-bottom: 0px;
+    margin-top: 200px;
+    transition: 0.5s;
+}
+.graphMastery p {
+    color: rgb(255, 195, 42);
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+}
+.xAxis {
+    display: none;
+}
+.custom-tooltip {
+    display: block;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.329);
+    box-shadow: 0 0 20px rgba(255, 255, 241, 0.911);
+}
+
+/*icon champions gratuits*/
+.champ {
+    padding-top: 50px;
+}
+.descListe {
+    color: rgb(255, 220, 133);
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0px 5px 5px rgb(0, 0, 0);
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+/*rangement icon champions gratuits*/
+.champ-list {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; 
+    margin: 70px;
+    margin-top: 0px;
+    padding: 70px; 
+}
+/*icon champions gratuits*/
+.iconChamp {
+    min-height: 120px;
+    min-width: 120px;
+    max-height: 120px;
+    max-width: 120px;
+    margin: 25px;
+    margin-bottom: 60px;
+    margin-top: 0px;
+    box-shadow: 2px 5px 5px rgb(0, 0, 0);
+}
+/*nom icon champions*/
+.nameChamp {
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 0px 0px 7px rgb(251, 255, 0);
+    color: rgb(255, 208, 91);
+}
+
+
+/*Page Média*/
+
+
+.pageMedia {
+    background-image: URL("../styles/img/backgroundMedia.png") ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;  
+}
+
+.supportPageMedia {
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: rgba(0, 0, 0, 0.281);
+    box-shadow: 0px 5px 10px #000000;
+    border-radius: 5px;
+}
+.supportPageMedia ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+.miniatureVideo {
+    padding: 30px 30% 30px 30%;
+}
+
+.miniatureVideo img {
+    box-shadow: 0px 0px 10px rgb(0, 204, 255);
+}
+.titrePlaylistMusiqueWorld {
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0px 0px 7px rgb(255, 238, 0);
+    color: rgb(255, 208, 91);
+    padding-top: 50px;
+}
+
+
+
