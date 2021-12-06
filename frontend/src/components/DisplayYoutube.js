@@ -1,5 +1,7 @@
 import React from 'react';
 
+//affichage d'une playliste Youtube avec lien cliquable qui ouvre la vidéo dans un nouvelle onglet
+
 const DisplayYoutube = (props) => {
 	const title = props.title
 	const medium = props.medium

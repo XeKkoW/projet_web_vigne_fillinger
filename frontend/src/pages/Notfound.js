@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/style.css';
 
+//si l'URL n'existe pas
+
 const NotFound = () => {
 	return (
 		<div>

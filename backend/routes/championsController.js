@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const ObjectID = require('mongoose').Types.ObjectId
 
+//voici les différente fonction du CRUD avce leur route respective
 
 const { ChampionsModel } = require('../models/championsModel');
 

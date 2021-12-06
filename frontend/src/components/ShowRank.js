@@ -1,5 +1,7 @@
 import React from 'react';
 
+//affiche le rank d'un joueur
+
 const ShowRank = (props) => {
 	const rank = props.rank
 	const tier = props.tier

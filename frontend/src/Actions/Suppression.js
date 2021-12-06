@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useEffect } from 'react/cjs/react.development';
-//'61ad371aea0e6f0d23935eff'
+
+//permet la suppression d'un champion de la BDD
+
 const Suppression = () => {
 	const [name, setName] = useState("")
 	const [data, setData] = useState([])

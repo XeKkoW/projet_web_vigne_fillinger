@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import DisplayAll from './DisplayAll';
 
+//Récupère les données de la BDD pour les envoyées à DisplayAll.js
 
 const ShowAllChampions = () => {
 

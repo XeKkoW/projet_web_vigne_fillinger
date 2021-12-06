@@ -3,6 +3,9 @@ import champions from 'lol-champions'
 import { useEffect } from 'react/cjs/react.development';
 import '../styles/style.css';
 
+//récupère l'id d'un champion, appel la BDD et la parcours pour récupéré l'image et le nom du champion
+//Ensuite elle affiche le tout
+
 const FreeChamp = (props) => {
 	const champion = props.champion
 	//console.log(champions);

@@ -4,8 +4,7 @@ import axios from 'axios';
 import DisplayYoutube from '../components/DisplayYoutube';
 import Navigation from '../components/Navigation';
 
-//https://www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&key=AIzaSyDNsMl3sAqcGzAss2CzNrXwX6iUJkNWXHU
-//PLGsXxFxHCgL9cMPyAcL54m7dJRpzoJENQ
+//Affiche une playliste Youtube
 
 const Youtube = () => {
 	const [data, setData] = useState(undefined);
@@ -40,7 +39,7 @@ const Youtube = () => {
 							< DisplayYoutube title={item.snippet.title} medium={item.snippet.thumbnails.medium} id={item.id} resourceId={item.snippet.resourceId} />
 						))}
 					</ul>
-					</div>
+				</div>
 				{console.log(data)}
 			</div>
 		);

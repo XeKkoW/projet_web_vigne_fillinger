@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+//model de notre base de données
 const ChampionsModel = mongoose.model(
 	"test",
 	{

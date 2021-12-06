@@ -2,6 +2,8 @@ import axios from 'axios';
 import React from 'react';
 import { useEffect, useState } from 'react/cjs/react.development';
 
+//permet la modification d'un champion dans la BDD
+
 const Modification = () => {
 	const [name, setName] = useState("")
 	const [title, setTitle] = useState("")

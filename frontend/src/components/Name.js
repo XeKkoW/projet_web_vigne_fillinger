@@ -3,6 +3,7 @@ import { Component } from 'react';
 import Summoner from './Summoner';
 import '../styles/style.css';
 
+//formulaire qui récupère un nom de joeur et le passe à Summoner.js
 
 class Name extends Component {
 	state = {

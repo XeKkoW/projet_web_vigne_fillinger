@@ -1,14 +1,13 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import PagePerso from './pages/PagePerso';
-import NotFound from './pages/NotFound';
 import Accueil from './pages/Accueil';
 import '../src/styles/style.css';
 import Admin from './pages/Admin';
-import DisplayOne from './components/DisplayOne';
 import Youtube from './pages/Youtube';
+import NotFound from './pages/NotFound';
 
-
+//gestion des routes de l'App
 
 function App() {
   return (

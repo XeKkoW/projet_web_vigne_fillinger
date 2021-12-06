@@ -1,4 +1,36 @@
-abcdefghijklmnopqrstuvwxyz
+Bonjour,
+Voici le Projet de Gabriel Vigne et Alexandre Fillinger ing4 Gr08
+
+Pour ce projet nous avons utiliser npm :
+react-router-dom
+router-dom
+node-sass
+nodemon
+recharts
+
+
+clé League of Lgends
+https://developer.riotgames.com/ pour une clé API si vous voulez utiliser le projet.
+chaque clé est valide 24h
+
+Pour remplacer la clé il faut aller dans les fichier suivant :
+Champ
+Graph
+Mastery
+Rank
+Summoner
+
+clé youtube :
+https://developers.google.com/youtube
+https://developers.google.com/youtube/v3/getting-started
+L'API se nomme youtube data API V3
+nous ne savons pas quand la clé ne fonctionnera plus
+
+si vous avez des questions nh'ésitez pas à nous contacter
+
+
+
+
 
 # Getting Started with Create React App
 
@@ -72,4 +104,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-Nouveau Fichier

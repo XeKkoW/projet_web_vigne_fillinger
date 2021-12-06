@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+//permet l'ajout d'un champion dans la BDD 
+
 const Ajout = () => {
 	const [key, setKey] = useState("")
 	const [name, setName] = useState("")

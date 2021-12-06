@@ -4,11 +4,13 @@ import Name from '../components/Name';
 import Navigation from '../components/Navigation';
 import '../styles/style.css';
 
+//Affiche les donnée d'un joueur
+
 const PagePerso = () => {
 
 	return (
 		<div className="home">
-			<Navigation/>
+			<Navigation />
 			<Name />
 		</div>
 

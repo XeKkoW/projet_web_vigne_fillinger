@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/style.css';
 
+//affiche tout les champion
+
 const DisplayAll = (props) => {
 	const champion = props.champion;
 

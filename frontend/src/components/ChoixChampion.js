@@ -2,6 +2,8 @@ import React from 'react';
 import { Component } from 'react';
 import ButtonChoix from './ButtonChoix';
 
+//permet de choisir un champion sur la page d'accueil, une fois le formulaire remplit elle appel le BoutonChoix.js
+
 class ChoixChampion extends Component {
 	state = {
 		name: ""

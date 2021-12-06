@@ -2,6 +2,9 @@ import React from 'react';
 import { useEffect, useState } from 'react/cjs/react.development';
 import DisplayOne from './DisplayOne';
 
+//Boutton de la page d'accueil qui permet d'appeler notre API seulement quans on clique sur le bouton (au chargement de la page) 
+//ça permet donc d'éviter un crash de l'application
+
 const ButtonChoix = (props) => {
 	const name = props.name
 	const [data, setData] = useState([])

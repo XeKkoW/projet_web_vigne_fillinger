@@ -4,6 +4,9 @@ import Ajout from '../Actions/Ajout';
 import Modification from '../Actions/Modification';
 import Suppression from '../Actions/Suppression';
 
+//Permet d'effectuer le CRUD de la BDD
+//appel la bonne fonction en fonction de là où on click
+
 const Admin = () => {
 
 

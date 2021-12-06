@@ -8,6 +8,8 @@ import ShowMastery from './ShowMastery';
 const API_URL = "https://euw1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/"
 const API_KEY = "RGAPI-dc2b4b4b-2124-445b-8588-f9db90676b76"
 
+//Récupère les Mastery d'un joueur pour passer les 3 meilleur à ShowMastery.js
+
 const Mastery = (props) => {
 	const summonerId = props.id
 	const [data, setData] = useState([]);

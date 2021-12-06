@@ -6,6 +6,8 @@ import '../styles/style.css';
 const API_URL = "https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key="
 const API_KEY = "RGAPI-dc2b4b4b-2124-445b-8588-f9db90676b76"
 
+//ce component fais appel à l'API des champions gratuit en fonction du niveau du joueur 
+//elle appelle ensuite FreeChamp.js
 
 const Champ = (props) => {
 	const level = props.level;

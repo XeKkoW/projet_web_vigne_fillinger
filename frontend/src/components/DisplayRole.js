@@ -1,5 +1,7 @@
 import React from 'react';
 
+//Permet d'afficher l'image du role du champion en fonction de son role
+
 const DisplayRole = (props) => {
 	const role = props.role;
 	var image = ""

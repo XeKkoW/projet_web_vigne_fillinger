@@ -10,7 +10,7 @@ const API_URL = "https://euw1.api.riotgames.com/lol/champion-mastery/v4/champion
 const API_KEY = "RGAPI-dc2b4b4b-2124-445b-8588-f9db90676b76"
 
 
-
+//Appel l'API des Mastery pour passer ses données à la fonction MasterGraph
 
 const Graph = (props) => {
 	const summonerId = props.id
@@ -53,16 +53,16 @@ const Graph = (props) => {
 
 					compteur(level.championLevel)
 
-					
+
 				))}
-				
-				
+
+
 				{console.log(graph)}
 
 
 			</ul>
 
-			<MasterGraph graph={graph}/>
+			<MasterGraph graph={graph} />
 
 		</div>
 	);
