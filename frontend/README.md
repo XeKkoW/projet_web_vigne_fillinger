@@ -29,7 +29,9 @@ https://developers.google.com/youtube/v3/getting-started
 L'API se nomme youtube data API V3
 nous ne savons pas quand la clé ne fonctionnera plus
 
-si vous avez des questions nh'ésitez pas à nous contacter
+Pour la BDD vous pouvez nous demander un accès, il nous faudra simplement votre addresse IP
+
+si vous avez des questions n'hésitez pas à nous contacter
 
 
 
